@@ -1,0 +1,119 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message_mwKdCW": {
+          "type": "message",
+          "settings": {
+            "text": "COMPLIMENTARY 2-DAY SHIPPING ON ALL U.S. ORDERS",
+            "learn_more_text": "Learn more",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_mwKdCW"
+      ],
+      "settings": {
+        "announcement_bar_position": "non_sticky",
+        "announcement_text_size": "small",
+        "autoplay": true,
+        "cycle_speed": 7,
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#56112a",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_VFgpTp": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "SUNGLASSES",
+            "images_position": "right",
+            "image_1": "shopify:\/\/shop_images\/For_Him.png",
+            "image_1_heading": "For Him",
+            "image_1_text": "",
+            "image_1_link": "shopify:\/\/collections\/best-seller",
+            "image_2": "shopify:\/\/shop_images\/For_Her.png",
+            "image_2_heading": "For Him",
+            "image_2_text": "",
+            "image_2_link": "shopify:\/\/collections\/eyeglasses",
+            "image_3_heading": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_heading": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_heading": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_heading": "",
+            "image_6_text": "",
+            "image_6_link": ""
+          }
+        },
+        "mega_menu_RhmRQq": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "ACCESSORIES",
+            "images_position": "right",
+            "image_1": "shopify:\/\/shop_images\/For_Him.png",
+            "image_1_heading": "For Him",
+            "image_1_text": "",
+            "image_1_link": "shopify:\/\/collections\/accessories",
+            "image_2": "shopify:\/\/shop_images\/For_Her.png",
+            "image_2_heading": "For Her",
+            "image_2_text": "",
+            "image_2_link": "shopify:\/\/collections\/sunglasses",
+            "image_3_heading": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_heading": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_heading": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_heading": "",
+            "image_6_text": "",
+            "image_6_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_VFgpTp",
+        "mega_menu_RhmRQq"
+      ],
+      "settings": {
+        "enable_sticky_header": true,
+        "logo": "shopify:\/\/shop_images\/Yolowink_Logo_White_7e5b9efb-2351-434a-bd54-5802e486c01f.png",
+        "logo_max_width": 140,
+        "mobile_logo_max_width": 100,
+        "navigation_menu": "main-menu",
+        "sidebar_navigation_menu": "",
+        "header_layout": "logo_center_navigation_inline",
+        "show_icons": true,
+        "reduce_desktop_padding": true,
+        "show_locale_selector": true,
+        "show_country_selector": false,
+        "enable_transparent_header": true,
+        "transparent_header_text_color": "#282828",
+        "transparent_logo": "shopify:\/\/shop_images\/Yolowink_Logo_Black.webp",
+        "search_menu": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

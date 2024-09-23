@@ -1,0 +1,348 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.png",
+            "mobile_image": "shopify:\/\/shop_images\/1_2aa50179-033f-4689-b029-3868cc3b9e1b.png",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/eyeglasses",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#e5e5e5",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_collections_wiQjwi": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_gPPPhy": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-seller",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_gPPPhy"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Best sellers",
+        "content": "",
+        "products_count": 50,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "split_images_YkRXMG": {
+      "type": "split-images",
+      "blocks": {
+        "custom_VjAbA3": {
+          "type": "custom",
+          "settings": {
+            "split-image": "shopify:\/\/shop_images\/Shop_Him.jpg",
+            "button-text": "shop for him",
+            "link": "shopify:\/\/collections\/eyeglasses"
+          }
+        },
+        "custom_JThQxd": {
+          "type": "custom",
+          "settings": {
+            "split-image": "shopify:\/\/shop_images\/Shop_Her.jpg",
+            "button-text": "shop for her",
+            "link": "shopify:\/\/collections\/eyeglasses"
+          }
+        }
+      },
+      "block_order": [
+        "custom_VjAbA3",
+        "custom_JThQxd"
+      ],
+      "settings": {
+      }
+    },
+    "collection_list_aT9BQB": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_ccHaVW": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/8_f2950660-0843-4d02-9788-3c85b8b9a0bb.jpg",
+            "subheading": "",
+            "title": "Men's Eyewear",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_HxU6Lb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Shop_Her.jpg",
+            "subheading": "",
+            "title": "Women's Eyewear",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_UeH4PF": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Blue_Block_Sunglasses.jpg",
+            "subheading": "",
+            "title": "Blue Block Sunglasses",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_ccHaVW",
+        "collection_HxU6Lb",
+        "collection_UeH4PF"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "collage",
+        "subheading": "",
+        "title": "Shop By Collection",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "collection_style_QBTbbB": {
+      "type": "collection-style",
+      "blocks": {
+        "custom_F8PXyk": {
+          "type": "Custom",
+          "settings": {
+            "collection_image": "shopify:\/\/shop_images\/CatoLimitedEdition2.jpg",
+            "collection": "eyeglasses",
+            "collection-title": "Aviators",
+            "collection-link": "shopify:\/\/collections\/eyeglasses"
+          }
+        },
+        "custom_bkAjQ4": {
+          "type": "Custom",
+          "settings": {
+            "collection_image": "shopify:\/\/shop_images\/CatoLimitedEdition3.jpg",
+            "collection": "eyeglasses",
+            "collection-title": "Style Name",
+            "collection-link": "shopify:\/\/collections\/eyeglasses"
+          }
+        },
+        "custom_aTNcBt": {
+          "type": "Custom",
+          "settings": {
+            "collection_image": "shopify:\/\/shop_images\/CatoLimitedEdition.jpg",
+            "collection": "eyeglasses",
+            "collection-title": "Style Name",
+            "collection-link": "shopify:\/\/collections\/eyeglasses"
+          }
+        },
+        "custom_qVPNdx": {
+          "type": "Custom",
+          "settings": {
+            "collection_image": "shopify:\/\/shop_images\/CatoLimitedEdition2.jpg",
+            "collection": "eyeglasses",
+            "collection-title": "Style Name",
+            "collection-link": ""
+          }
+        },
+        "custom_Lcgtgt": {
+          "type": "Custom",
+          "settings": {
+            "collection_image": "shopify:\/\/shop_images\/CatoLimitedEdition3.jpg",
+            "collection": "eyeglasses",
+            "collection-title": "Style Name",
+            "collection-link": "shopify:\/\/collections\/eyeglasses"
+          }
+        }
+      },
+      "block_order": [
+        "custom_F8PXyk",
+        "custom_bkAjQ4",
+        "custom_aTNcBt",
+        "custom_qVPNdx",
+        "custom_Lcgtgt"
+      ],
+      "settings": {
+        "title": "Shop By Style"
+      }
+    },
+    "image_only_banner_J7PKLT": {
+      "type": "image-only-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-07-05_at_6.28.15_PM.jpg",
+        "link": "shopify:\/\/collections\/best-seller"
+      }
+    },
+    "slideshow_jzP87j": {
+      "type": "slideshow",
+      "blocks": {
+        "image_XzJRj4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png",
+            "mobile_image": "shopify:\/\/shop_images\/3_8afaf47e-9329-45de-b9e6-ff2224a73587.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/best-seller",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_XzJRj4"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_new_FMKLgQ": {
+      "type": "image-with-text-new",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Yolowink_Exclusives.jpg",
+        "title": "YOLOWINK EXCLUSIVES",
+        "btn-title": "EXPLORE COLLECTION",
+        "link": "shopify:\/\/collections\/eyeglasses"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-seller",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Sunglasses",
+        "content": "",
+        "products_count": 50,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_overlay_REpeya": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/3.png",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "shopify:\/\/collections\/eyeglasses",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "bottom_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "newsletter_eQR947": {
+      "type": "newsletter",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/Newsletter_Background.jpg",
+        "subheading": "Get Regular Updates",
+        "content": "",
+        "text_position": "right",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured_collections_wiQjwi",
+    "split_images_YkRXMG",
+    "collection_list_aT9BQB",
+    "collection_style_QBTbbB",
+    "image_only_banner_J7PKLT",
+    "slideshow_jzP87j",
+    "image_with_text_new_FMKLgQ",
+    "featured-collections",
+    "image_with_text_overlay_REpeya",
+    "newsletter_eQR947"
+  ]
+}

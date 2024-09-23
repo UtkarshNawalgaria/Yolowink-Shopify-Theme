@@ -1,0 +1,73 @@
+{{ 'collection-style.css' |  asset_url |  stylesheet_tag}}
+
+<div class="container">
+    <div class="collection-style-wrapper">
+    <div class="collection-title">
+        <h3 class="heading h2">{{ section.settings.title }}</h3>
+    </div>
+    <div class="collection-list-wrapper">
+        {% for block in section.blocks %}
+     {% assign collection = collections[block.settings.collection] %}
+        <div class="collection-content">
+            <a href="{{ block.settings.collection-link }}">
+            {% if block.settings.collection_image != blank %}
+            <img src="{{ block.settings.collection_image | img_url: "master"}}" alt="" srcset="">
+           {% else %}
+         <img src="{{ collection.image | img_url: '350x' }}" 
+           alt="{{collection.title}}">
+        {% endif %}
+        </a>
+        <h4>{{ block.settings.collection-title }}</h4>
+        </div>
+        
+        {% endfor %}
+    </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Collection style list",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+        ],
+        "blocks": [
+            {
+                "name": "Collection style list",
+                "type": "Custom",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "collection_image",
+                        "label": "Collection Image"
+                    },
+                    {
+                        "type": "collection",
+                        "id": "collection",
+                        "label": "Collection list"
+                    },
+                    {
+                        "type": "text",
+                        "id": "collection-title",
+                        "label": "Collection title",
+                        "default": "Style Name"
+                    },
+                    {
+                        "type": "url",
+                        "id": "collection-link",
+                        "label": "Link"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Collection styles"
+            }
+        ]
+}
+{% endschema %}

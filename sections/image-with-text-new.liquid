@@ -1,0 +1,48 @@
+
+{{'image-with-text.css' |  asset_url |  stylesheet_tag}}
+<div class="image-with-text-wrapper">
+    <div class="image-container">
+        <img src="{{ section.settings.image |  img_url: 'master' }}" alt="" srcset="">
+    </div>
+    <div class="text-wrapper">
+        <h3>{{ section.settings.title }}</h3>
+        <div class="button-wrapper">
+            <a href="{{ section.settings.link }}" class="button button--custom ">{{ section.settings.btn-title }}</a>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Image with text",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+         {
+            "type": "text",
+            "id": "btn-title",
+            "label": "Button Title"
+        },
+         {
+            "type": "url",
+            "id": "link",
+            "label": "Button Link"
+        }
+        ]
+        ,
+       "presets": [
+            {
+                "name": "Image with text new"
+            }
+       ]
+        
+}
+{% endschema %}

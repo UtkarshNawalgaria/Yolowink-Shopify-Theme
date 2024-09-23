@@ -1,0 +1,187 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "none",
+            "variant_image_options": "Color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": true,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "content_88TN6f": {
+          "type": "content",
+          "settings": {
+            "title": "Exchange & Return",
+            "content": "<ul><li>Returns are not applicable on discounted products<\/li><li>Shop worry-free with our 1-year warranty on all frames*<\/li><li>Click <a href=\"https:\/\/www.johnjacobseyewear.com\/pages\/returns\">here<\/a> for FAQs, terms & conditions on all policies<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "content_fQt3DB": {
+          "type": "content",
+          "settings": {
+            "title": "About Our Lenses",
+            "content": "<ul><li>MR Series lenses & lenses made in CR-39 material for high durability<\/li><li>Cutting-edge lens manufacturing & lens coating technology<\/li><li>Cutting-edge lens manufacturing & lens coating technology<\/li><li>Lenses compliant with the FDA safety standards<\/li><\/ul><p><\/p>",
+            "page": ""
+          }
+        },
+        "complementary_products_97MxCf": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Featured products"
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "content_88TN6f",
+        "content_fQt3DB",
+        "complementary_products_97MxCf"
+      ],
+      "settings": {
+      }
+    },
+    "171965092025a457bb": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_4LTd8f": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_4LTd8f"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "You may also like",
+        "recommendations_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "recently_viewed_products_wfyUgg": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "subheading": "",
+        "title": "Recently viewed",
+        "products_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "gallery_PgQAbr": {
+      "type": "gallery",
+      "blocks": {
+        "image_AXagaM": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.product_custom.product_gallery.value }}",
+            "caption": ""
+          }
+        },
+        "image_afRKwc": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_gallery_img_4.value }}",
+            "caption": ""
+          }
+        },
+        "image_mctryg": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_gallery_img_3.value }}",
+            "caption": ""
+          }
+        },
+        "image_WkniB4": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_gallery_img_4.value }}",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_AXagaM",
+        "image_afRKwc",
+        "image_mctryg",
+        "image_WkniB4"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-content",
+    "171965092025a457bb",
+    "product-recommendations",
+    "recently_viewed_products_wfyUgg",
+    "gallery_PgQAbr"
+  ]
+}

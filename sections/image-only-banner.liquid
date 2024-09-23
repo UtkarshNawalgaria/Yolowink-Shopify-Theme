@@ -1,0 +1,36 @@
+<div class="image-banner-wrapper">
+   <div class="image-wrapper">
+    <a href="{{ section.settings.link }}">
+    <img src="{{ section.settings.image |  img_url: 'master' }}" alt="{{ section.settings.image.title }}">
+    </a>
+   </div>
+</div>
+{% stylesheet %}
+    .image-banner-wrapper img{
+        max-width:100%;
+        width:100%;
+        display:block;
+    }
+{% endstylesheet %} 
+{% schema %}
+{
+    "name": "Image only banner",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+        }
+        ],
+    "presets": [
+        {
+            "name": "Image only banner"
+        }
+    ]
+}
+{% endschema %}
