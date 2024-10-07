@@ -15317,6 +15317,7 @@ input:checked
 
   .product-meta__title {
     margin-block-end: 24px;
+    font-size: 24px;
   }
 }
 
@@ -18437,6 +18438,6 @@ shopify-payment-terms {
 
 @media screen and (max-width: 740px) {
   .product-meta__title {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
