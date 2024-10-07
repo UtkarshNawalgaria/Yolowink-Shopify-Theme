@@ -117,7 +117,7 @@
         {%- endunless -%}
       {%- endif -%}
 
-      <a href="{{ product.url }}" data-instant class="product-item-meta__title"></a>
+      <a href="{{ product.url }}" data-instant class="product-item-meta__title">{{ product.title |  split: '-' }}</a>
 
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
