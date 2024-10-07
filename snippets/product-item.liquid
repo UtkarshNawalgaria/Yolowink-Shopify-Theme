@@ -116,8 +116,8 @@
           <a class="product-item-meta__vendor heading heading--xsmall" href="{{ product.vendor | url_for_vendor }}" data-instant>{{ product.vendor }}</a>
         {%- endunless -%}
       {%- endif -%}
-
-      <a href="{{ product.url }}" data-instant class="product-item-meta__title">{{ product.title }}</a>
+      {% assign product_title_parts = product.title | split: "-" %}
+      <a href="{{ product.url }}" data-instant class="product-item-meta__title">{{ product_title_parts[0] | strip }}</a>
 
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
