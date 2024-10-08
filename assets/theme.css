@@ -14901,8 +14901,8 @@ input:checked
 }
 
 .product__thumbnail {
-  width: 76px;
-  min-width: 76px;
+  width: 54px;
+  min-width: 54px;
   padding: 2px;
   position: relative;
 }
