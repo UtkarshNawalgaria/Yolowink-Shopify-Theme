@@ -36,10 +36,10 @@
         "slide-1"
       ],
       "settings": {
-        "section_height": "medium",
+        "section_height": "small",
         "transition_type": "sweep",
         "autoplay": true,
-        "cycle_speed": 5,
+        "cycle_speed": 7,
         "background": "rgba(0,0,0,0)"
       }
     },
