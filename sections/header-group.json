@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "header",
   "name": "Header group",
@@ -39,14 +48,14 @@
           "settings": {
             "menu_item": "SUNGLASSES",
             "images_position": "right",
-            "image_1": "shopify:\/\/shop_images\/For_Him.png",
+            "image_1": "shopify://shop_images/For_Him.png",
             "image_1_heading": "For Him",
             "image_1_text": "",
-            "image_1_link": "shopify:\/\/collections\/best-seller",
-            "image_2": "shopify:\/\/shop_images\/For_Her.png",
+            "image_1_link": "shopify://collections/best-seller",
+            "image_2": "shopify://shop_images/For_Her.png",
             "image_2_heading": "For Him",
             "image_2_text": "",
-            "image_2_link": "shopify:\/\/collections\/eyeglasses",
+            "image_2_link": "shopify://collections/eyeglasses",
             "image_3_heading": "",
             "image_3_text": "",
             "image_3_link": "",
@@ -66,14 +75,14 @@
           "settings": {
             "menu_item": "ACCESSORIES",
             "images_position": "right",
-            "image_1": "shopify:\/\/shop_images\/For_Him.png",
+            "image_1": "shopify://shop_images/For_Him.png",
             "image_1_heading": "For Him",
             "image_1_text": "",
-            "image_1_link": "shopify:\/\/collections\/accessories",
-            "image_2": "shopify:\/\/shop_images\/For_Her.png",
+            "image_1_link": "shopify://collections/accessories",
+            "image_2": "shopify://shop_images/For_Her.png",
             "image_2_heading": "For Her",
             "image_2_text": "",
-            "image_2_link": "shopify:\/\/collections\/sunglasses",
+            "image_2_link": "shopify://collections/sunglasses",
             "image_3_heading": "",
             "image_3_text": "",
             "image_3_link": "",
@@ -94,8 +103,8 @@
         "mega_menu_RhmRQq"
       ],
       "settings": {
-        "enable_sticky_header": true,
-        "logo": "shopify:\/\/shop_images\/Yolowink_Logo_White_7e5b9efb-2351-434a-bd54-5802e486c01f.png",
+        "enable_sticky_header": false,
+        "logo": "shopify://shop_images/Yolowink_Logo_White_7e5b9efb-2351-434a-bd54-5802e486c01f.png",
         "logo_max_width": 140,
         "mobile_logo_max_width": 100,
         "navigation_menu": "main-menu",
@@ -107,7 +116,7 @@
         "show_country_selector": false,
         "enable_transparent_header": true,
         "transparent_header_text_color": "#282828",
-        "transparent_logo": "shopify:\/\/shop_images\/Yolowink_Logo_Black.webp",
+        "transparent_logo": "shopify://shop_images/Yolowink_Logo_Black.webp",
         "search_menu": "main-menu"
       }
     }

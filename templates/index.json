@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1.png",
+            "image": "shopify://shop_images/yw_model_banner.jpg",
             "mobile_image": "shopify://shop_images/1_2aa50179-033f-4689-b029-3868cc3b9e1b.png",
             "text_position": "bottom_center",
             "subheading": "",
@@ -36,7 +36,7 @@
         "slide-1"
       ],
       "settings": {
-        "section_height": "auto",
+        "section_height": "large",
         "transition_type": "sweep",
         "autoplay": true,
         "cycle_speed": 5,
