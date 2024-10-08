@@ -11,6 +11,7 @@
   "current": {
     "button_border_radius": 0,
     "block_border_radius": "none",
+    "vertical_spacing": "medium",
     "heading_color": "#282828",
     "text_color": "#282828",
     "background": "#ffffff",
