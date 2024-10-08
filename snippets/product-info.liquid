@@ -126,6 +126,38 @@
         {%- endif -%}
       </div>
     {%- endif -%}
+
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when condition %}
+          {%- when 'related_products' -%}
+            {% liquid
+              assign related_products = product.metafields['shopify--discovery--product_recommendation'].related_products.value
+              assign related_products = related_products | concat: product
+              assign related_products_count = related_products | reverse | reverse | size
+            %}
+            {% if related_products_count > 0 %}
+              <div class="product-form__related-products">
+                <div style="margin-bottom: 10px;">{{ block.settings.heading }}: {{ product.metafields.custom.lens_color }}</div>
+                <div class="related-products">
+                  <div class="related-products__item current">
+                    <a href="#">
+                      {{ product.media[0] | image_url: width: 60 | image_tag: sizes: '(max-width: 999px) 72px, 60px', widths: '60,72,120,144,180,216,240,288' }}
+                    </a>
+                  </div>
+                  {%- for _product in related_products -%}
+                    {% assign first_image = _product.media[0] %}
+                    <div class="related-products__item">
+                      <a href="{{ _product.url }}">
+                        {{ first_image | image_url: width: 60 | image_tag: sizes: '(max-width: 999px) 72px, 60px', widths: '60,72,120,144,180,216,240,288' }}
+                      </a>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {% endif %}
+      {% endcase %}
+    {% endfor %}
   </product-meta>
 
   {%- render 'product-form', product: product, update_url: update_url -%}
