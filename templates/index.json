@@ -195,17 +195,8 @@
           "settings": {
             "collection_image": "shopify://shop_images/CatoLimitedEdition2.jpg",
             "collection": "eyeglasses",
-            "collection-title": "Style Name",
+            "collection-title": "Clubmaster",
             "collection-link": ""
-          }
-        },
-        "custom_Lcgtgt": {
-          "type": "Custom",
-          "settings": {
-            "collection_image": "shopify://shop_images/CatoLimitedEdition3.jpg",
-            "collection": "eyeglasses",
-            "collection-title": "Style Name",
-            "collection-link": "shopify://collections/eyeglasses"
           }
         }
       },
@@ -213,8 +204,7 @@
         "custom_F8PXyk",
         "custom_bkAjQ4",
         "custom_aTNcBt",
-        "custom_qVPNdx",
-        "custom_Lcgtgt"
+        "custom_qVPNdx"
       ],
       "settings": {
         "title": "Shop By Style"
