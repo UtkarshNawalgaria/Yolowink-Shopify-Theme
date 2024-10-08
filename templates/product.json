@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -46,7 +55,7 @@
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
-        "show_thumbnails_on_mobile": false,
+        "show_thumbnails_on_mobile": true,
         "desktop_thumbnails_position": "left",
         "transition_effect": "slide"
       }
@@ -63,7 +72,7 @@
           "type": "content",
           "settings": {
             "title": "Exchange & Return",
-            "content": "<ul><li>Returns are not applicable on discounted products<\/li><li>Shop worry-free with our 1-year warranty on all frames*<\/li><li>Click <a href=\"https:\/\/www.johnjacobseyewear.com\/pages\/returns\">here<\/a> for FAQs, terms & conditions on all policies<\/li><\/ul>",
+            "content": "<ul><li>Returns are not applicable on discounted products</li><li>Shop worry-free with our 1-year warranty on all frames*</li><li>Click <a href=\"https://www.johnjacobseyewear.com/pages/returns\">here</a> for FAQs, terms & conditions on all policies</li></ul>",
             "page": ""
           }
         },
@@ -71,7 +80,7 @@
           "type": "content",
           "settings": {
             "title": "About Our Lenses",
-            "content": "<ul><li>MR Series lenses & lenses made in CR-39 material for high durability<\/li><li>Cutting-edge lens manufacturing & lens coating technology<\/li><li>Cutting-edge lens manufacturing & lens coating technology<\/li><li>Lenses compliant with the FDA safety standards<\/li><\/ul><p><\/p>",
+            "content": "<ul><li>MR Series lenses & lenses made in CR-39 material for high durability</li><li>Cutting-edge lens manufacturing & lens coating technology</li><li>Cutting-edge lens manufacturing & lens coating technology</li><li>Lenses compliant with the FDA safety standards</li></ul><p></p>",
             "page": ""
           }
         },
@@ -95,7 +104,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_4LTd8f": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
