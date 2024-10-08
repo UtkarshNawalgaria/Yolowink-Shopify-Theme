@@ -7812,8 +7812,8 @@ input:checked
 
 .color-swatch-list--mini .color-swatch__item {
   border-width: 2px;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .color-swatch-list--mini .color-swatch__item:before,
@@ -14873,7 +14873,7 @@ input:checked
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-block-start: 18px;
+  margin-block-start: 10px;
   display: flex;
   position: relative;
 }
@@ -14901,8 +14901,8 @@ input:checked
 }
 
 .product__thumbnail {
-  width: 54px;
-  min-width: 54px;
+  width: 60px;
+  min-width: 60px;
   padding: 2px;
   position: relative;
 }
@@ -15525,6 +15525,7 @@ shopify-payment-terms {
   .product-tabs__tab-item-wrapper .collapsible {
     visibility: visible;
     height: auto;
+    overflow: auto;
   }
 }
 
@@ -18439,4 +18440,25 @@ shopify-payment-terms {
   .product-meta__title {
     font-size: 17px;
   }
+}
+
+@media screen and (max-width: 740px) {
+  .shopify-section--main-product .container {
+    padding-inline: calc(var(--container-gutter) / 2);
+  }
+}
+
+.product-form__related-products {
+  margin-top: 10px;
+}
+
+.related-products {
+  display: flex;
+  gap: 20px;
+}
+
+.related-products__item.current {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  overflow: auto;
 }
