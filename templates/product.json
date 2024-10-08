@@ -37,12 +37,19 @@
             "buy_now_button_background": "rgba(0,0,0,0)",
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
+        },
+        "related_products": {
+          "type": "related_products",
+          "settings": {
+            "heading": "Color"
+          }
         }
       },
       "block_order": [
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "related_products"
       ],
       "settings": {
         "show_vendor": false,
