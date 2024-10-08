@@ -6043,8 +6043,17 @@ var ProductItem = class extends CustomHTMLElement {
       } else {
         url = new URL(link.getAttribute("href"), `https://${window.themeVariables.routes.host}`);
       }
-      url.searchParams.set("variant", target.getAttribute("data-variant-id"));
-      link.setAttribute("href", url.toString());
+      const variantId = target.getAttribute("data-variant-id");
+      if (variantId) {
+        url.searchParams.set("variant", target.getAttribute("data-variant-id"));
+        link.setAttribute("href", url.toString());
+      }
+
+      const variantUrl = target.getAttribute("data-variant-url");
+      if (variantUrl) {
+        url = variantUrl;
+        link.setAttribute("href", url);
+      }
     });
     if (target.hasAttribute("data-variant-featured-media")) {
       const newImage = this.primaryImageList.find((image) => image.getAttribute("data-media-id") === target.getAttribute("data-variant-featured-media"));
