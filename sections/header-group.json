@@ -103,7 +103,7 @@
         "mega_menu_RhmRQq"
       ],
       "settings": {
-        "enable_sticky_header": false,
+        "enable_sticky_header": true,
         "logo": "shopify://shop_images/Yolowink_Logo_White_7e5b9efb-2351-434a-bd54-5802e486c01f.png",
         "logo_max_width": 140,
         "mobile_logo_max_width": 100,
@@ -114,7 +114,7 @@
         "reduce_desktop_padding": true,
         "show_locale_selector": true,
         "show_country_selector": false,
-        "enable_transparent_header": true,
+        "enable_transparent_header": false,
         "transparent_header_text_color": "#282828",
         "transparent_logo": "shopify://shop_images/Yolowink_Logo_Black.webp",
         "search_menu": "main-menu"
