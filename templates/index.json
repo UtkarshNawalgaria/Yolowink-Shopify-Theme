@@ -66,15 +66,6 @@
     "featured_collections_wiQjwi": {
       "type": "featured-collections",
       "blocks": {
-        "collection_gPPPhy": {
-          "type": "collection",
-          "settings": {
-            "collection": "cat-eyes-sunglasses",
-            "label": "Cat Eyes",
-            "button_text": "",
-            "button_url": ""
-          }
-        },
         "collection_7CBCWJ": {
           "type": "collection",
           "settings": {
@@ -83,11 +74,20 @@
             "button_text": "",
             "button_url": ""
           }
+        },
+        "collection_gPPPhy": {
+          "type": "collection",
+          "settings": {
+            "collection": "hexagon-sunglasses",
+            "label": "Hexagon",
+            "button_text": "",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
-        "collection_gPPPhy",
-        "collection_7CBCWJ"
+        "collection_7CBCWJ",
+        "collection_gPPPhy"
       ],
       "settings": {
         "subheading": "",
