@@ -18503,7 +18503,8 @@ shopify-payment-terms {
 }
 
 .product-form__add-button {
-  background-color: rgb(var(--secondary-button-background)) !important;
+  background: var(--jdgm-primary-color) !important;
+  color: white;
 }
 
 @media screen and (min-width: 741px) {
