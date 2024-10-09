@@ -279,6 +279,9 @@
       {%- endif -%}
     </div>
     {% comment %} Used when single products are linked to each other {% endcomment %}
+    {% assign product_count_to_show = 4 %}
+    {% assign product_count_shown = 1 %}
+    
     {% if related_products_count > 0 %}
       {% case settings.product_color_display %}
         {% when 'count' %}
@@ -294,13 +297,18 @@
               swatch_product: product
             %}
             {% for _product in related_products %}
-              {% assign forloop_index = forloop.index | plus: 1 %}
-              {% render 'new-product-variant-swatch',
-                color_name: color_name,
-                forloop_index: forloop_index,
-                swatch_product: _product
-              %}
+              {% if product_count_shown <= 4 %}
+                {% assign forloop_index = forloop.index | plus: 1 %}
+                {% render 'new-product-variant-swatch',
+                  color_name: color_name,
+                  forloop_index: forloop_index,
+                  swatch_product: _product
+                %}
+                {% assign product_count_shown = product_count_shown | plus: 1 %}
+              {% endif %}
             {% endfor %}
+            {% assign product_count_left = related_products_count | minus: product_count_shown %}
+            <span>+{{ product_count_left }}</span>
           </div>
       {% endcase %}
     {% endif %}
