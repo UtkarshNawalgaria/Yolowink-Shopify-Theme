@@ -295,10 +295,10 @@
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
-        "collection-1": {
+        "collection_BhVEn3": {
           "type": "collection",
           "settings": {
-            "collection": "best-seller",
+            "collection": "unisex-sunglasses",
             "label": "",
             "button_text": "",
             "button_url": ""
@@ -306,11 +306,11 @@
         }
       },
       "block_order": [
-        "collection-1"
+        "collection_BhVEn3"
       ],
       "settings": {
         "subheading": "",
-        "title": "Sunglasses",
+        "title": "Unisex Sunglasses",
         "content": "",
         "products_count": 50,
         "products_per_row": 4,
