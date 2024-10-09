@@ -308,7 +308,9 @@
               {% endif %}
             {% endfor %}
             {% assign product_count_left = related_products_count | minus: product_count_shown | plus: 1 %}
-            <span>+{{ product_count_left }}</span>
+            {% if product_count_left > 0 %}
+              <span>+{{ product_count_left }}</span>
+            {% endif %}
           </div>
       {% endcase %}
     {% endif %}
