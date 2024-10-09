@@ -69,19 +69,29 @@
         "collection_gPPPhy": {
           "type": "collection",
           "settings": {
-            "collection": "best-seller",
-            "label": "",
+            "collection": "cat-eyes-sunglasses",
+            "label": "Cat Eyes",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "collection_7CBCWJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "aviator-sunglasses",
+            "label": "Aviators",
             "button_text": "",
             "button_url": ""
           }
         }
       },
       "block_order": [
-        "collection_gPPPhy"
+        "collection_gPPPhy",
+        "collection_7CBCWJ"
       ],
       "settings": {
         "subheading": "",
-        "title": "Best sellers",
+        "title": "Our Hottest Collections",
         "content": "",
         "products_count": 12,
         "products_per_row": 4,
