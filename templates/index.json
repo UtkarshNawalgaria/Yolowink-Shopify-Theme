@@ -199,7 +199,7 @@
             "collection_image": "shopify://shop_images/CatoLimitedEdition2.jpg",
             "collection": "aviator-sunglasses",
             "collection-title": "Aviators",
-            "collection-link": "shopify://collections/eyeglasses"
+            "collection-link": "shopify://collections/aviator-sunglasses"
           }
         },
         "custom_bkAjQ4": {
@@ -208,7 +208,7 @@
             "collection_image": "shopify://shop_images/CatoLimitedEdition3.jpg",
             "collection": "oval-pinto-sunglasses",
             "collection-title": "Oval (Pinto)",
-            "collection-link": "shopify://collections/eyeglasses"
+            "collection-link": "shopify://collections/oval-pinto-sunglasses"
           }
         },
         "custom_aTNcBt": {
@@ -217,7 +217,7 @@
             "collection_image": "shopify://shop_images/CatoLimitedEdition.jpg",
             "collection": "cat-eyes-sunglasses",
             "collection-title": "Cat Eyes",
-            "collection-link": "shopify://collections/eyeglasses"
+            "collection-link": "shopify://collections/cat-eyes-sunglasses"
           }
         },
         "custom_qVPNdx": {
@@ -226,7 +226,7 @@
             "collection_image": "shopify://shop_images/CatoLimitedEdition2.jpg",
             "collection": "clubmaster-sunglasses",
             "collection-title": "Clubmaster",
-            "collection-link": ""
+            "collection-link": "shopify://collections/clubmaster-sunglasses"
           }
         }
       },
