@@ -1734,7 +1734,7 @@ p + .button-group,
 
 @media screen and (min-width: 741px) {
   .section__header {
-    margin-block-end: min(40px, var(--vertical-breather));
+    margin-block-end: min(32px, var(--vertical-breather));
   }
 
   .section__footer {
@@ -1744,7 +1744,7 @@ p + .button-group,
 
 @media screen and (min-width: 1000px) {
   .section__header {
-    margin-block-end: min(48px, var(--vertical-breather));
+    margin-block-end: min(32px, var(--vertical-breather));
   }
 
   .section__footer {
