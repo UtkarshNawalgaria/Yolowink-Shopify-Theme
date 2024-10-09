@@ -50,6 +50,11 @@
             "heading": "Product Specification",
             "field_list": "Frame Type,Frame Shape,Frame Material,Lens Type,Lens Color"
           }
+        },
+        "description_hJDVw4": {
+          "type": "description",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -57,7 +62,8 @@
         "quantity_selector",
         "buy_buttons",
         "related_products",
-        "product_specification_KTwhqh"
+        "product_specification_KTwhqh",
+        "description_hJDVw4"
       ],
       "settings": {
         "show_vendor": false,
@@ -80,6 +86,7 @@
       "blocks": {
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
