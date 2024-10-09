@@ -14,7 +14,7 @@
       "settings": {
         "show_collection_image": true,
         "show_collection_title": true,
-        "show_collection_description": true,
+        "show_collection_description": false,
         "section_height": "small",
         "text_width": "medium",
         "image_text_color": "#ffffff",
@@ -80,73 +80,13 @@
         "collection_aTyGKR",
         "collection_MAGqne"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "grid",
         "subheading": "",
         "min-value": "",
         "max-value": "",
-        "title": "",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "collection_list_GgThFf": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_jEnFYJ": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/sunglasses_desktop_affordable_category_2.webp",
-            "subheading": "Under Rs.1000",
-            "title": "",
-            "link_text": "",
-            "link_url": "/collections/best-seller?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=1000",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_WqFJyi": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/sunglasses_desktop_category_3.webp",
-            "subheading": "Rs.1000 - Rs.2000",
-            "title": "",
-            "link_text": "",
-            "link_url": "/collections/best-seller?sort_by=best-selling&filter.v.price.gte=1000&filter.v.price.lte=2000",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_xM6Vtx": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/sunglasses_desktop_premium_category_1.webp",
-            "subheading": "Above Rs 2000",
-            "title": "",
-            "link_text": "",
-            "link_url": "/collections/best-seller?sort_by=best-selling&filter.v.price.gte=2000&filter.v.price.lte=",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_jEnFYJ",
-        "collection_WqFJyi",
-        "collection_xM6Vtx"
-      ],
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": false,
-        "layout": "grid",
-        "subheading": "",
         "title": "",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
@@ -172,7 +112,6 @@
   "order": [
     "collection-banner",
     "collection_list_new_ANtTcV",
-    "collection_list_GgThFf",
     "main"
   ]
 }

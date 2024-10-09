@@ -71,7 +71,7 @@
           "settings": {
             "collection": "aviator-sunglasses",
             "label": "Aviators",
-            "button_text": "",
+            "button_text": "See More",
             "button_url": ""
           }
         },
@@ -93,7 +93,7 @@
         "subheading": "",
         "title": "Our Hottest Collections",
         "content": "",
-        "products_count": 12,
+        "products_count": 16,
         "products_per_row": 4,
         "stack_products": false,
         "show_cta": false,
