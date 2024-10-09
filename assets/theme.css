@@ -18529,3 +18529,9 @@ shopify-payment-terms {
     text-align: left;
   }
 }
+
+@media screen and (min-width: 741px) {
+  .product-form__payment-container {
+    margin-block-start: 0;
+  }
+}
