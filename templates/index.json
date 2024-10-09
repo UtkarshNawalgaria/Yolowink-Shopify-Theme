@@ -137,23 +137,23 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/8_f2950660-0843-4d02-9788-3c85b8b9a0bb.jpg",
+            "image": "shopify://shop_images/Artboard_1.jpg",
             "subheading": "",
-            "title": "Men's Eyewear",
+            "title": "",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 12
           }
         },
         "collection_HxU6Lb": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Shop_Her.jpg",
+            "image": "shopify://shop_images/Artboard_2.jpg",
             "subheading": "",
-            "title": "Women's Eyewear",
+            "title": "",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -167,7 +167,7 @@
             "collection": "",
             "image": "shopify://shop_images/Blue_Block_Sunglasses.jpg",
             "subheading": "",
-            "title": "Blue Block Sunglasses",
+            "title": "",
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -183,9 +183,9 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
-        "layout": "collage",
-        "subheading": "",
-        "title": "Shop By Collection",
+        "layout": "grid",
+        "subheading": "High quality sunglasses available at affordable prices",
+        "title": "Shop Our Range",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
