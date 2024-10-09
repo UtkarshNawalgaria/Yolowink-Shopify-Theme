@@ -106,26 +106,26 @@
     "split_images_YkRXMG": {
       "type": "split-images",
       "blocks": {
-        "custom_VjAbA3": {
-          "type": "custom",
-          "settings": {
-            "split-image": "shopify://shop_images/Shop_Him.jpg",
-            "button-text": "shop for him",
-            "link": "shopify://collections/mens-sunglasses"
-          }
-        },
         "custom_JThQxd": {
           "type": "custom",
           "settings": {
-            "split-image": "shopify://shop_images/Shop_Her.jpg",
+            "split-image": "shopify://shop_images/Shop_For_Her.jpg",
             "button-text": "shop for her",
             "link": "shopify://collections/womens-sunglasses"
+          }
+        },
+        "custom_VjAbA3": {
+          "type": "custom",
+          "settings": {
+            "split-image": "shopify://shop_images/Shop_For_Him.jpg",
+            "button-text": "shop for him",
+            "link": "shopify://collections/mens-sunglasses"
           }
         }
       },
       "block_order": [
-        "custom_VjAbA3",
-        "custom_JThQxd"
+        "custom_JThQxd",
+        "custom_VjAbA3"
       ],
       "settings": {
       }
