@@ -19,7 +19,7 @@
         "text_width": "medium",
         "image_text_color": "#ffffff",
         "image_overlay_color": "#000000",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 12,
         "quick_links": ""
       }
     },
