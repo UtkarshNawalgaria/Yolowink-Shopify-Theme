@@ -75,11 +75,13 @@
   {%- else -%}
     <div class="container">
       <div class="page-header">
-        {{- breadcrumb -}}
+        {% comment %}
+          {{- breadcrumb -}}
+        {% endcomment %}
 
         <div class="page-header__text-wrapper text-container">
           {%- if section.settings.show_collection_title -%}
-            <h1 class="heading h1">{{ collection.title }}</h1>
+            <h1 class="heading h3">{{ collection.title }}</h1>
           {%- endif -%}
 
           {%- if section.settings.show_collection_description and collection.description != blank -%}
