@@ -18455,8 +18455,9 @@ shopify-payment-terms {
 }
 
 .related-products {
-  display: flex;
-  gap: 20px;
+	display: flex;
+	column-gap: 20px;
+	flex-wrap: wrap;
 }
 
 .related-products__item.current {
