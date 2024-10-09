@@ -3197,7 +3197,7 @@ p + .button-group,
 }
 
 .tabs-nav {
-  margin-block-end: 32px;
+  /* margin-block-end: 32px; */
   display: block;
   position: relative;
 }
