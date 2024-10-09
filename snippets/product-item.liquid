@@ -8,6 +8,12 @@
   {%- assign product_url_contains_query = false -%}
 {%- endif -%}
 
+{% liquid
+  assign related_products = product.metafields['shopify--discovery--product_recommendation'].related_products.value
+  assign related_products = related_products | concat: product
+  assign related_products_count = related_products | reverse | reverse | size
+%}
+
 <product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}" {% if reveal %}reveal{% endif %}>
   {%- capture product_labels -%}
     {%- for tag in product.tags -%}
@@ -60,6 +66,11 @@
 	          {%- endfor -%}
           {%- endif -%}
         {%- endfor -%}
+        {% if related_products_count > 0 %}
+          {% for _product in related_products %}
+            {{ _product.featured_media | image_url: width: _product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: _product.featured_media.id, hidden: true }}
+          {% endfor %}
+        {% endif %}
       {%- endif -%}
 
       {%- if settings.show_secondary_image and product.media.size > 1 and hide_secondary_image != true -%}
@@ -116,9 +127,11 @@
           <a class="product-item-meta__vendor heading heading--xsmall" href="{{ product.vendor | url_for_vendor }}" data-instant>{{ product.vendor }}</a>
         {%- endunless -%}
       {%- endif -%}
+
       {% assign product_title_parts = product.title | split: "-" %}
       <a href="{{ product.url }}" data-instant class="product-item-meta__title">{{ product_title_parts[0] | strip }}</a>
 
+      {% comment %} Product Price {% endcomment %}
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
           {%- if product.price_varies and product.compare_at_price -%}
@@ -228,6 +241,7 @@
         </a>
       {%- endif -%}
 
+      {% comment %} Used when products have variants {% endcomment %}
       {%- if settings.product_color_display != 'hide' and reduced_content != true -%}
         {%- for color_label in color_label_list -%}
           {%- if product.options_by_name[color_label] != blank -%}
@@ -263,6 +277,33 @@
           {%- endif -%}
         {%- endfor -%}
       {%- endif -%}
+
+      {% comment %} Used when single products are linked to each other {% endcomment %}
+      {% if related_products_count > 0 %}
+        {% case settings.product_color_display %}
+          {% when 'count' %}
+            <p class="product-item-meta__color-count text--small text--subdued">{{  related_products_count | plus: 1 }} Colors</p>
+          {%- when 'swatch' -%}
+            <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
+              {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+              {% capture color_name %}{{ section.id }}-{{ block.id }}-{{ product.id }}{% endcapture %}
+
+              {% render 'new-product-variant-swatch',
+                color_name: color_name,
+                forloop_index: 1,
+                swatch_product: product
+              %}
+              {% for _product in related_products %}
+                {% assign forloop_index = forloop.index | plus: 1 %}
+                {% render 'new-product-variant-swatch',
+                  color_name: color_name,
+                  forloop_index: forloop_index,
+                  swatch_product: _product
+                %}
+              {% endfor %}
+            </div>
+        {% endcase %}
+      {% endif %}
     </div>
 
     {%- if product.available and reduced_content or show_cta -%}

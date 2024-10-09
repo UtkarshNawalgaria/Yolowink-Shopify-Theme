@@ -205,14 +205,14 @@
       ----------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
       {%- when 'image' -%}
-      {% if block.settings.image != blank %}
-        <div class="product-form__image product-form__image--{{ block.settings.image_alignment }}" {{ block.shopify_attributes }}>
-          {%- capture image_sizes -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 }}, {{ block.settings.image_width | times: 3 }}{%- endcapture -%}
-          {%- capture sizes_attribute -%}{{ block.settings.image_width }}px{%- endcapture -%}
-          {%- capture style_attribute -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
-          {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: image_sizes, style: style_attribute -}}
-        </div>
-      {%- endif -%}
+        {% if block.settings.image != blank %}
+          <div class="product-form__image product-form__image--{{ block.settings.image_alignment }}" {{ block.shopify_attributes }}>
+            {%- capture image_sizes -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 }}, {{ block.settings.image_width | times: 3 }}{%- endcapture -%}
+            {%- capture sizes_attribute -%}{{ block.settings.image_width }}px{%- endcapture -%}
+            {%- capture style_attribute -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
+            {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: image_sizes, style: style_attribute -}}
+          </div>
+        {%- endif -%}
 
       {%- comment -%}
       ----------------------------------------------------------------------------------------------------------------
@@ -444,6 +444,49 @@
             {%- render 'store-availability', product_variant: product.selected_or_first_available_variant -%}
           </store-pickup>
         {%- endif -%}
+
+      {% when 'product_specification' %}
+        {% assign value_count = 0 %}
+        {% assign metafield_keys = block.settings.field_list | split: ',' %}
+        {% capture table %}
+          <div class="product-specification__table">
+            {% for key in metafield_keys %}
+              {% liquid
+                assign downcased_key = key | downcase
+                assign split_key_size = downcased_key | split: ' ' | size
+
+                if split_key_size > 1
+                  assign downcased_key = downcased_key | split: ' ' | join: '_'
+                endif
+
+                assign metafield_value = product.metafields.custom[downcased_key]
+              %}
+              {% if metafield_value != blank %}
+                {% assign value_count = value_count | plus: 1 %}
+                <div class="column">
+                  <span class="key">{{ key }}: </span>
+                  <span class="value">{{ metafield_value }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endcapture %}
+
+        {% if value_count >= 1 %}
+          <div class="product-form__product-specification" {{ block.shopify_attributes }}>
+            <details>
+              <summary>
+                <h5 class="product-specification__heading">{{ block.settings.heading }}</h5>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                  </svg>
+                </span>
+              </summary>
+              {{ table }}
+            </details>
+          </div>
+        {% endif %}
     {%- endcase -%}
   {%- endfor -%}
 

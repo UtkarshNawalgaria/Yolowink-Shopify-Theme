@@ -17,7 +17,7 @@
         "message_mwKdCW": {
           "type": "message",
           "settings": {
-            "text": "COMPLIMENTARY 2-DAY SHIPPING ON ALL U.S. ORDERS",
+            "text": "Free Shipping all over India",
             "learn_more_text": "Learn more",
             "title": "",
             "content": "",
@@ -32,7 +32,7 @@
       "settings": {
         "announcement_bar_position": "non_sticky",
         "announcement_text_size": "small",
-        "autoplay": true,
+        "autoplay": false,
         "cycle_speed": 7,
         "background": "#000000",
         "text_color": "#ffffff",
@@ -109,7 +109,7 @@
         "mobile_logo_max_width": 100,
         "navigation_menu": "main-menu",
         "sidebar_navigation_menu": "",
-        "header_layout": "logo_center_navigation_inline",
+        "header_layout": "logo_left_navigation_center",
         "show_icons": true,
         "reduce_desktop_padding": true,
         "show_locale_selector": true,

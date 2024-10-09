@@ -15,13 +15,13 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/yw_model_banner.jpg",
-            "mobile_image": "shopify://shop_images/1_2aa50179-033f-4689-b029-3868cc3b9e1b.png",
+            "image": "shopify://shop_images/yw_model_banner1.jpg",
+            "mobile_image": "shopify://shop_images/yw_mobile_banner.jpg",
             "text_position": "bottom_center",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify://collections/eyeglasses",
+            "button_1_link": "shopify://collections/sunglasses",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -30,10 +30,30 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "image_EkmhjF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/yw_flatlay_banner.jpg",
+            "mobile_image": "shopify://shop_images/yw_mobile_banner2.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
-        "slide-1"
+        "slide-1",
+        "image_EkmhjF"
       ],
       "settings": {
         "section_height": "small",

@@ -43,13 +43,21 @@
           "settings": {
             "heading": "Color"
           }
+        },
+        "product_specification_KTwhqh": {
+          "type": "product_specification",
+          "settings": {
+            "heading": "Product Specification",
+            "field_list": "Frame Type,Frame Shape,Frame Material,Lens Type,Lens Color"
+          }
         }
       },
       "block_order": [
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "related_products"
+        "related_products",
+        "product_specification_KTwhqh"
       ],
       "settings": {
         "show_vendor": false,

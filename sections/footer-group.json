@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "footer",
   "name": "Footer group",
@@ -11,7 +20,7 @@
             "icon": "picto-box",
             "custom_icon_width": 50,
             "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
           }
         },
         "item-2": {
@@ -20,7 +29,7 @@
             "icon": "picto-phone",
             "custom_icon_width": 50,
             "title": "Customer service",
-            "content": "<p>We are available from monday to friday to answer your questions.<\/p>"
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
           }
         },
         "item-3": {
@@ -29,7 +38,7 @@
             "icon": "picto-lock",
             "custom_icon_width": 50,
             "title": "Secure payment",
-            "content": "<p>Your payment information is processed securely.<\/p>"
+            "content": "<p>Your payment information is processed securely.</p>"
           }
         },
         "item-4": {
@@ -38,7 +47,7 @@
             "icon": "picto-email",
             "custom_icon_width": 50,
             "title": "Contact us",
-            "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com<\/p>"
+            "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com</p>"
           }
         }
       },
@@ -60,8 +69,8 @@
         "image_hN4c3x": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Logo.png",
-            "image-link": "https:\/\/yolowink.myshopify.com",
+            "image": "shopify://shop_images/Logo.png",
+            "image-link": "https://yolowink.myshopify.com",
             "image_width": 190
           }
         },
@@ -81,7 +90,7 @@
           "type": "newsletter",
           "settings": {
             "title": "Newsletter",
-            "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+            "content": "<p>A short sentence describing what someone will receive by subscribing</p>"
           }
         }
       },
