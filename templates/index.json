@@ -71,7 +71,7 @@
           "settings": {
             "collection": "aviator-sunglasses",
             "label": "Aviators",
-            "button_text": "See More",
+            "button_text": "",
             "button_url": ""
           }
         },
