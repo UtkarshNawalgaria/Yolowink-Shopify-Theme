@@ -39,8 +39,15 @@
   font-weight: 700;
 }
 .featured-collections {
-  margin-bottom: 100px;
+  margin-bottom: 65px;
 }
+
+@media screen and (min-width: 741px) {
+  .featured-collections {
+    margin-bottom: 100px;
+  }
+}
+
 .shopify-section--newsletter .image-with-text-block__content {
   background-color: transparent;
   color: #ffffff;
