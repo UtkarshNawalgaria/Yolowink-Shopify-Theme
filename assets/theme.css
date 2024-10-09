@@ -18502,10 +18502,9 @@ shopify-payment-terms {
   width: 50%;
 }
 
-.shopify-section--featured-collections .section__header {
-  margin-block-end: 0;
+.product-form__add-button {
+  background-color: rgb(var(--secondary-button-background))
 }
-
 
 @media screen and (min-width: 741px) {
   .product-item {
