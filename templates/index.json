@@ -321,44 +321,6 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
-    },
-    "image_with_text_overlay_REpeya": {
-      "type": "image-with-text-overlay",
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": true,
-        "section_height": "auto",
-        "image": "shopify://shop_images/3.png",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_link": "shopify://collections/eyeglasses",
-        "link_style": "button",
-        "background_type": "full_width",
-        "text_width": "fill",
-        "text_position": "bottom_center",
-        "text_color": "#ffffff",
-        "button_background": "#ffffff",
-        "button_text_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "newsletter_eQR947": {
-      "type": "newsletter",
-      "settings": {
-        "reveal_on_scroll": true,
-        "image": "shopify://shop_images/Newsletter_Background.jpg",
-        "subheading": "Get Regular Updates",
-        "content": "",
-        "text_position": "right",
-        "text_alignment": "left",
-        "text_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -370,8 +332,6 @@
     "image_only_banner_J7PKLT",
     "slideshow_jzP87j",
     "image_with_text_new_FMKLgQ",
-    "featured-collections",
-    "image_with_text_overlay_REpeya",
-    "newsletter_eQR947"
+    "featured-collections"
   ]
 }
