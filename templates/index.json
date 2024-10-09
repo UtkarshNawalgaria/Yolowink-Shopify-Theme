@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/yw_model_banner1.jpg",
-            "mobile_image": "shopify://shop_images/yw_mobile_banner.jpg",
+            "image": "shopify://shop_images/yw_model_banner2.jpg",
+            "mobile_image": "shopify://shop_images/yw_mobile_banner3.jpg",
             "text_position": "bottom_center",
             "subheading": "",
             "title": "",
