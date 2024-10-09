@@ -18465,6 +18465,10 @@ shopify-payment-terms {
   overflow: auto;
 }
 
+.product-form__product-specification {
+  margin-block-start: 10px;
+}
+
 .product-form__product-specification details {
   border-bottom: 1px solid rgb(var(--border-color));
   padding-bottom: 10px;
