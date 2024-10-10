@@ -34,11 +34,11 @@
             "menu": "footer-policy"
           }
         },
-        "newsletter_8qbG8f": {
-          "type": "newsletter",
+        "social_media_FpBpaW": {
+          "type": "social_media",
           "settings": {
-            "title": "Newsletter",
-            "content": "<p>A short sentence describing what someone will receive by subscribing</p>"
+            "title": "Follow us",
+            "content": ""
           }
         }
       },
@@ -46,7 +46,7 @@
         "image_hN4c3x",
         "links",
         "links_ikCX77",
-        "newsletter_8qbG8f"
+        "social_media_FpBpaW"
       ],
       "settings": {
         "show_payment_icons": true,
