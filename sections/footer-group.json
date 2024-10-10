@@ -11,65 +11,13 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "text-with-icons": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-box",
-            "custom_icon_width": 50,
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "custom_icon_width": 50,
-            "title": "Customer service",
-            "content": "<p>We are available from monday to friday to answer your questions.</p>"
-          }
-        },
-        "item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-lock",
-            "custom_icon_width": 50,
-            "title": "Secure payment",
-            "content": "<p>Your payment information is processed securely.</p>"
-          }
-        },
-        "item-4": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-email",
-            "custom_icon_width": 50,
-            "title": "Contact us",
-            "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "item-4"
-      ],
-      "disabled": true,
-      "settings": {
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
         "image_hN4c3x": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Logo.png",
+            "image": "shopify://shop_images/Yolowink_Color_Logo_2.png",
             "image-link": "https://yolowink.myshopify.com",
             "image_width": 190
           }
@@ -109,7 +57,6 @@
     }
   },
   "order": [
-    "text-with-icons",
     "footer"
   ]
 }
