@@ -30,10 +30,52 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "#282828"
       }
+    },
+    "text_with_icons_3QYKe3": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_wbMTRN": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon_width": 50,
+            "title": "Phone Number",
+            "content": "<p>+91 9892179831</p>"
+          }
+        },
+        "item_BQDrPf": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon_width": 50,
+            "title": "Email",
+            "content": "<p>Need to contact us ? Just send us an e-mail at <a href=\"mailto:support@yolowink.com\" title=\"mailto:support@yolowink.com\">support@yolowink.com</a></p>"
+          }
+        },
+        "item_iKez3b": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon_width": 50,
+            "title": "Address",
+            "content": "<p>S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_wbMTRN",
+        "item_BQDrPf",
+        "item_iKez3b"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "main",
-    "contact-form"
+    "contact-form",
+    "text_with_icons_3QYKe3"
   ]
 }
