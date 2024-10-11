@@ -15193,6 +15193,7 @@ input:checked
     flex-direction: row-reverse;
     align-items: flex-start;
     display: flex;
+    position: sticky;
   }
 
   .product--thumbnails-left .product__media-nav {
