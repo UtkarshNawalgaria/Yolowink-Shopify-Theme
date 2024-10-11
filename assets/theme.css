@@ -14769,6 +14769,7 @@ input:checked
 
   .product:not(.product--featured) {
     margin-block-end: 80px;
+    position: relative;
   }
 
   .product__media {
