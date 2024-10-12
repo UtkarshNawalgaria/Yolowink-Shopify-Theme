@@ -92,16 +92,26 @@
             "button_text": "",
             "button_url": ""
           }
+        },
+        "collection_93RMit": {
+          "type": "collection",
+          "settings": {
+            "collection": "rectangle-sunglasses",
+            "label": "Rectangle",
+            "button_text": "",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
         "collection_7CBCWJ",
         "collection_gPPPhy",
-        "collection_ENhnh7"
+        "collection_ENhnh7",
+        "collection_93RMit"
       ],
       "settings": {
         "subheading": "",
-        "title": "Our Hottest Collections",
+        "title": "Get Your Favorite Shape",
         "content": "",
         "products_count": 16,
         "products_per_row": 4,

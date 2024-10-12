@@ -285,33 +285,35 @@
         {% when 'count' %}
           <p class="product-item-meta__color-count text--small text--subdued">{{  related_products_count | plus: 1 }} Colors</p>
         {%- when 'swatch' -%}
-          <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
-            {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
-            {% capture color_name %}{{ section.id }}-{{ block.id }}-{{ product.id }}{% endcapture %}
-            {% assign product_count_to_show = 3 %}
-            {% assign product_count_shown = 1 %}
+          {% if product.type == "Sunglasses" %}
+            <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
+              {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+              {% capture color_name %}{{ section.id }}-{{ block.id }}-{{ product.id }}{% endcapture %}
+              {% assign product_count_to_show = 3 %}
+              {% assign product_count_shown = 1 %}
 
-            {% render 'new-product-variant-swatch',
-              color_name: color_name,
-              forloop_index: 1,
-              swatch_product: product
-            %}
-            {% for _product in related_products %}
-              {% if product_count_shown <= product_count_to_show %}
-                {% assign forloop_index = forloop.index | plus: 1 %}
-                {% render 'new-product-variant-swatch',
-                  color_name: color_name,
-                  forloop_index: forloop_index,
-                  swatch_product: _product
-                %}
-                {% assign product_count_shown = product_count_shown | plus: 1 %}
+              {% render 'new-product-variant-swatch',
+                color_name: color_name,
+                forloop_index: 1,
+                swatch_product: product
+              %}
+              {% for _product in related_products %}
+                {% if product_count_shown <= product_count_to_show %}
+                  {% assign forloop_index = forloop.index | plus: 1 %}
+                  {% render 'new-product-variant-swatch',
+                    color_name: color_name,
+                    forloop_index: forloop_index,
+                    swatch_product: _product
+                  %}
+                  {% assign product_count_shown = product_count_shown | plus: 1 %}
+                {% endif %}
+              {% endfor %}
+              {% assign product_count_left = related_products_count | minus: product_count_shown | plus: 1 %}
+              {% if product_count_left > 0 %}
+                <span>+{{ product_count_left }}</span>
               {% endif %}
-            {% endfor %}
-            {% assign product_count_left = related_products_count | minus: product_count_shown | plus: 1 %}
-            {% if product_count_left > 0 %}
-              <span>+{{ product_count_left }}</span>
-            {% endif %}
-          </div>
+            </div>
+          {% endif %}
       {% endcase %}
     {% endif %}
 
