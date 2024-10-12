@@ -1,0 +1,49 @@
+{% liquid
+  assign lens_color = swatch_product.metafields.custom.lens_color.value
+  assign lens_color_handle = lens_color | handleize
+  assign lens_color_object = shop.metaobjects['shopify--color-pattern'][lens_color_handle]
+
+  if lens_color_object == blank
+    assign lens_color_split = lens_color | split: '/'
+    assign lens_color_split_size = lens_color_split | size
+
+    if lens_color_split_size == 2
+      assign lens_color = lens_color_split[0]
+    endif
+
+    assign lens_color_handle = lens_color | handleize
+    assign lens_color_object = shop.metaobjects['shopify--color-pattern'][lens_color_handle]
+  endif
+
+  assign color_value = lens_color_object.color
+%}
+
+<script>
+  console.log('{{ lens_color }}');
+</script>
+
+{%- capture color_id -%}{{ color_name }}-{{ forloop_index }}{%- endcapture -%}
+
+<div class="color-swatch {% if color_value == blank %}color-swatch--white{% endif %}">
+  <input
+    type="radio"
+    name="{{ color_name }}"
+    class="color-swatch__radio visually-hidden"
+    id="{{ color_id }}"
+    value="{{ value | escape }}"
+    {% if forloop_index == 1 %}
+      checked="checked"
+    {% endif %}
+    data-variant-url="{{ swatch_product.url }}"
+    {% if swatch_product.featured_media %}
+      data-variant-featured-media="{{ swatch_product.featured_media.id }}"
+    {% endif %}
+  >
+  <label
+    class="color-swatch__item"
+    for="{{ color_id }}"
+    style="{% render 'color-swatch-style', swatch: value.swatch, color_swatch_config: color_swatch_config, value: color_value %}"
+  >
+    <span class="visually-hidden">{{ value }}</span>
+  </label>
+</div>

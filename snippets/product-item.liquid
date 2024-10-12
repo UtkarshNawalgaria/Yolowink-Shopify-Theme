@@ -279,7 +279,7 @@
       {%- endif -%}
     </div>
     {% comment %} Used when single products are linked to each other {% endcomment %}
-    
+
     {% if related_products_count > 0 %}
       {% case settings.product_color_display %}
         {% when 'count' %}
@@ -288,7 +288,7 @@
           <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
             {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
             {% capture color_name %}{{ section.id }}-{{ block.id }}-{{ product.id }}{% endcapture %}
-            {% assign product_count_to_show = 4 %}
+            {% assign product_count_to_show = 3 %}
             {% assign product_count_shown = 1 %}
 
             {% render 'new-product-variant-swatch',

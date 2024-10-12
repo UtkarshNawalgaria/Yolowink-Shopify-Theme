@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -88,7 +88,7 @@
           "type": "content",
           "settings": {
             "title": "Exchange & Return",
-            "content": "<ul><li>Returns are not applicable on discounted products</li><li>Shop worry-free with our 1-year warranty on all frames*</li><li>Click <a href=\"https://www.johnjacobseyewear.com/pages/returns\">here</a> for FAQs, terms & conditions on all policies</li></ul>",
+            "content": "<ul><li>Returns are not applicable on discounted products</li><li>Shop worry-free with our 1-year warranty on all frames*</li><li>Click <a href=\"/policies/terms-of-service\" title=\"Terms of Service\">here</a> for FAQs, terms & conditions on all policies</li></ul>",
             "page": ""
           }
         },

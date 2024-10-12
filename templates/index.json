@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -83,11 +83,21 @@
             "button_text": "",
             "button_url": ""
           }
+        },
+        "collection_ENhnh7": {
+          "type": "collection",
+          "settings": {
+            "collection": "cat-eyes-sunglasses",
+            "label": "Cat Eyes",
+            "button_text": "",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
         "collection_7CBCWJ",
-        "collection_gPPPhy"
+        "collection_gPPPhy",
+        "collection_ENhnh7"
       ],
       "settings": {
         "subheading": "",
@@ -130,6 +140,60 @@
       "settings": {
       }
     },
+    "video_carousel_i7zTzM": {
+      "type": "video-carousel",
+      "blocks": {
+        "video_TPENFF": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/1.mp4",
+            "product": "brobiz-tr-unisex-black-polarized-clip-on-sunglasses-yw4103-cg-c-3"
+          }
+        },
+        "video_QBDBdP": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/2.mp4",
+            "product": "bicoators-brown-metal-unisex-aviator-sunglasses-yw52006-c-3"
+          }
+        },
+        "video_CrhUdC": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/5.mp4",
+            "product": ""
+          }
+        },
+        "video_yxrkab": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/3.mp4",
+            "product": "ovaflex-brown-metal-unisex-oval-sunglasses-yw52009-c-6"
+          }
+        },
+        "video_a473ep": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/4.mp4",
+            "product": "softsquare-black-square-metal-sunglasses-for-women-yw8104-c-1"
+          }
+        }
+      },
+      "block_order": [
+        "video_TPENFF",
+        "video_QBDBdP",
+        "video_CrhUdC",
+        "video_yxrkab",
+        "video_a473ep"
+      ],
+      "settings": {
+        "heading": "Live Life in Full Wink",
+        "autoplay": true,
+        "show_video_controls": false,
+        "loop_video": false,
+        "full_width": false
+      }
+    },
     "collection_list_aT9BQB": {
       "type": "collection-list",
       "blocks": {
@@ -164,7 +228,7 @@
         "collection_UeH4PF": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "sunglasses-under-rs-3000",
             "image": "shopify://shop_images/Artboard_3.jpg",
             "subheading": "",
             "title": "",
@@ -190,62 +254,34 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "collection_style_QBTbbB": {
-      "type": "collection-style",
+    "featured_collections_rFPjFR": {
+      "type": "featured-collections",
       "blocks": {
-        "custom_F8PXyk": {
-          "type": "Custom",
+        "collection_Ui6pJL": {
+          "type": "collection",
           "settings": {
-            "collection_image": "shopify://shop_images/CatoLimitedEdition2.jpg",
-            "collection": "aviator-sunglasses",
-            "collection-title": "Aviators",
-            "collection-link": "shopify://collections/aviator-sunglasses"
-          }
-        },
-        "custom_bkAjQ4": {
-          "type": "Custom",
-          "settings": {
-            "collection_image": "shopify://shop_images/CatoLimitedEdition3.jpg",
-            "collection": "oval-pinto-sunglasses",
-            "collection-title": "Oval (Pinto)",
-            "collection-link": "shopify://collections/oval-pinto-sunglasses"
-          }
-        },
-        "custom_aTNcBt": {
-          "type": "Custom",
-          "settings": {
-            "collection_image": "shopify://shop_images/CatoLimitedEdition.jpg",
-            "collection": "cat-eyes-sunglasses",
-            "collection-title": "Cat Eyes",
-            "collection-link": "shopify://collections/cat-eyes-sunglasses"
-          }
-        },
-        "custom_qVPNdx": {
-          "type": "Custom",
-          "settings": {
-            "collection_image": "shopify://shop_images/CatoLimitedEdition2.jpg",
-            "collection": "clubmaster-sunglasses",
-            "collection-title": "Clubmaster",
-            "collection-link": "shopify://collections/clubmaster-sunglasses"
+            "collection": "computer-glasses",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
           }
         }
       },
       "block_order": [
-        "custom_F8PXyk",
-        "custom_bkAjQ4",
-        "custom_aTNcBt",
-        "custom_qVPNdx"
+        "collection_Ui6pJL"
       ],
       "settings": {
-        "title": "Shop By Style"
-      }
-    },
-    "image_only_banner_J7PKLT": {
-      "type": "image-only-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/WhatsApp_Image_2024-07-05_at_6.28.15_PM.jpg",
-        "link": "shopify://collections/best-seller"
+        "subheading": "Protect Your Eyes, Enhance Your Screen Time",
+        "title": "Computer Glasses",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
       }
     },
     "slideshow_jzP87j": {
@@ -282,16 +318,6 @@
         "background": "rgba(0,0,0,0)"
       }
     },
-    "image_with_text_new_FMKLgQ": {
-      "type": "image-with-text-new",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Yolowink_Exclusives.jpg",
-        "title": "YOLOWINK EXCLUSIVES",
-        "btn-title": "EXPLORE COLLECTION",
-        "link": "shopify://collections/eyeglasses"
-      }
-    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -321,17 +347,40 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "1728703084ebdf1a64": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_UNgRLb": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Visit Us @yolowink",
+            "title_color": "",
+            "title_size": 32,
+            "alignment": "center",
+            "background_color": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_UNgRLb"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
     }
   },
   "order": [
     "slideshow",
     "featured_collections_wiQjwi",
     "split_images_YkRXMG",
+    "video_carousel_i7zTzM",
     "collection_list_aT9BQB",
-    "collection_style_QBTbbB",
-    "image_only_banner_J7PKLT",
+    "featured_collections_rFPjFR",
     "slideshow_jzP87j",
-    "image_with_text_new_FMKLgQ",
-    "featured-collections"
+    "featured-collections",
+    "1728703084ebdf1a64"
   ]
 }

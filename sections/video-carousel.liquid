@@ -1,0 +1,119 @@
+<section class="section section-{{ section.id }}">
+  <div class="container">
+    <header class="section__header">
+      <div class="text-container">
+        <h4 class="heading h3">{{ section.settings.heading }}</h4>
+      </div>
+    </header>
+    <div class="video-carousel">
+      {% for block in section.blocks %}
+        {% if block.settings.video != blank %}
+          <div class="video-carousel-item">
+            {% if block.settings.product != blank %}
+              <a href="{{ block.settings.product.url }}">
+            {% endif %}
+            <div class="video-wrapper video-wrapper--native" style="--aspect-ratio: 2/3;">
+              {{-
+                block.settings.video
+                | video_tag: controls: false, autoplay: true, muted: true, playsinline: true, loop: true
+              -}}
+            </div>
+            {% if block.settings.product != blank %}
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-{{ section.id }} .video-carousel {
+    display: flex;
+    gap: 24px;
+  }
+
+  @media screen and (max-width: 741px) {
+    .section-{{ section.id }} .video-carousel {
+      flex-direction: column;
+    }
+  }
+  .section-{{ section.id }} .video-carousel .video-carousel-item {
+    position: relative;
+  }
+
+  .section-{{ section.id }} video {
+    border-radius: 5px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Video Carousel",
+  "class": "shopify-section--video-carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Yolowink Videos"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "info": "Video is muted automatically to allow autoplay.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_video_controls",
+      "label": "Show video controls",
+      "info": "Only applicable with native video.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "loop_video",
+      "label": "Loop Video Infinitely",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": "For the best experience, use atleast 4 columns to show the videos and images."
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Related Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Carousel"
+    }
+  ]
+}
+{% endschema %}
