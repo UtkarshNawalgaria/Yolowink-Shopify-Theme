@@ -19,7 +19,7 @@
 %}
 
 <script>
-  console.log('{{ lens_color }}');
+  console.log('{{ lens_color }}, {{ color_value }}');
 </script>
 
 {%- capture color_id -%}{{ color_name }}-{{ forloop_index }}{%- endcapture -%}
