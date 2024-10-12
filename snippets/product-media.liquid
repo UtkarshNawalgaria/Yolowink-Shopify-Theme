@@ -8,6 +8,17 @@
     The implementation is rather complex and inefficient due to lot of string parsings, but it is, unfortunately, the
     only way to do it on Shopify right now.
   {%- endcomment -%}
+  {% liquid
+    assign product_price = product.price
+    if product_price < 100000
+      assign package_image = 'package_below_999.jpg'
+    elsif product_price < 200000
+      assign package_image = 'package_below_rs_2000.jpg'
+    else
+      assign package_image = 'package_below_rs_3000.jpg'
+    endif
+    assign package_media_id = '231934'
+  %}
 
   {% assign filtered_media_ids = '' %}
 
@@ -141,6 +152,14 @@
             {%- endcase -%}
           </div>
         {%- endfor -%}
+        {% comment %} Show package image {% endcomment %}
+        <div id="product-{{ section.id }}-{{ package_media_id }}" class="product__media-item {% if is_media_filtered %}is-filtered{% endif %} {% if selected_media.id == media.id %}is-initial-selected is-selected{% endif %}" data-media-type="{{ media.media_type }}" data-media-id="{{ media.id }}" data-original-position="{{ forloop.index0 }}">
+          <div class="product__media-image-wrapper aspect-ratio aspect-ratio--natural" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }}">
+            {%- assign should_reveal = false -%}
+            {%- assign loading = 'eager' -%}
+            <img src="{{ package_image |  file_url }}" alt="Packaging" loading="lazy" width="640" height="640" sizes="(max-width: 999px) calc(100vw - 48px), 640px">
+          </div>
+        </div>
       </flickity-carousel>
 
       {%- if section.settings.enable_image_zoom -%}
@@ -213,6 +232,11 @@
                   </div>
                 </button>
               {%- endfor -%}
+              <button type="button" tabindex="-1" {% if settings.reveal_product_media and is_media_filtered == false %}reveal{% endif %} class="product__thumbnail-item {% if is_media_filtered %}is-filtered{% endif %} {% unless section.settings.show_thumbnails_on_mobile %}hidden-pocket{% endunless %}" {% if selected_media.id == media.id %}aria-current="true"{% endif %} aria-controls="product-{{ section.id }}-{{ package_media_id }}" data-media-id="{{ package_media_id }}" data-action="select">
+                <div class="product__thumbnail">
+                  <img src="{{ package_image |  file_url }}" alt="Packaging" loading="lazy" width="120" height="120">
+                </div>
+              </button>
             </div>
           </div>
         </scroll-shadow>
