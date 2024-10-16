@@ -14920,6 +14920,13 @@ input:checked
     object-position: top center;
     aspect-ratio: 1 / 1;
 }
+.product__thumbnail img{
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  object-position: top center;
+  aspect-ratio: 1 / 1;
+}
 
 .product__thumbnail,
 .product__thumbnail > img {
