@@ -14921,11 +14921,11 @@ input:checked
     aspect-ratio: 1 / 1;
 }
 .product__thumbnail img{
-  width: 54px;
-  height: 54px;
+  aspect-ratio: 1 / 1;
+  width: 56px;
+  height: 56px;
   object-fit: cover;
   object-position: top center;
-  aspect-ratio: 1 / 1;
 }
 
 .product__thumbnail,
