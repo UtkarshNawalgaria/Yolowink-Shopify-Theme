@@ -14916,6 +14916,9 @@ input:checked
   min-width: 60px;
   padding: 2px;
   position: relative;
+  object-fit: cover;
+    object-position: top center;
+    aspect-ratio: 1 / 1;
 }
 
 .product__thumbnail,
