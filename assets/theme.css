@@ -14917,6 +14917,11 @@ input:checked
   border-radius: min(var(--block-border-radius), 4px);
 }
 
+.product__thumbnail > img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
 .product__thumbnail .placeholder-background {
   display: block;
 }
