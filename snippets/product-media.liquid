@@ -153,7 +153,7 @@
           </div>
         {%- endfor -%}
         {% comment %} Show package image {% endcomment %}
-        <div id="product-{{ section.id }}-{{ package_media_id }}" class="product__media-item {% if is_media_filtered %}is-filtered{% endif %} {% if selected_media.id == media.id %}is-initial-selected is-selected{% endif %}" data-media-type="image" data-media-id="{{ media.id }}" data-original-position="{{ forloop.index0 }}">
+        <div id="product-{{ section.id }}-{{ package_media_id }}" class="product__media-item {% if is_media_filtered %}is-filtered{% endif %} {% if selected_media.id == media.id %}is-initial-selected is-selected{% endif %}" data-media-type="image" data-media-id="{{ package_media_id }}" data-original-position="{{ forloop.index0 }}">
           <div class="product__media-image-wrapper aspect-ratio aspect-ratio--natural" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }}">
             {%- assign should_reveal = false -%}
             {%- assign loading = 'eager' -%}
