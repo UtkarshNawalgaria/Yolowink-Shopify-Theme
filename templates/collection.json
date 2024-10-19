@@ -23,75 +23,6 @@
         "quick_links": ""
       }
     },
-    "collection_list_new_ANtTcV": {
-      "type": "collection-list-new",
-      "blocks": {
-        "collection_KCxzxG": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/sunglasses_desktop_affordable_category_2.webp",
-            "subheading": "Under Rs.1000",
-            "min-value": "0",
-            "max-value": "1000",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_aTyGKR": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/sunglasses_desktop_category_3.webp",
-            "subheading": "Rs.1000 - Rs.2000",
-            "min-value": "1000",
-            "max-value": "2000",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_MAGqne": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/sunglasses_desktop_premium_category_1.webp",
-            "subheading": "Above Rs 2000",
-            "min-value": "2000",
-            "max-value": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_KCxzxG",
-        "collection_aTyGKR",
-        "collection_MAGqne"
-      ],
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": false,
-        "layout": "grid",
-        "subheading": "",
-        "min-value": "",
-        "max-value": "",
-        "title": "",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "main": {
       "type": "main-collection",
       "settings": {
@@ -107,11 +38,25 @@
         "promotion_position": "top",
         "promotion_height": "small"
       }
-    }
+    },
+    "collection-banner-2": {
+      "type": "collection-banner",
+      "settings": {
+        "show_collection_image": false,
+        "show_collection_title": false,
+        "show_collection_description": true,
+        "section_height": "small",
+        "text_width": "medium",
+        "image_text_color": "#ffffff",
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 12,
+        "quick_links": ""
+      }
+    },
   },
   "order": [
     "collection-banner",
-    "collection_list_new_ANtTcV",
-    "main"
+    "main",
+    "collection-banner-2"
   ]
 }
