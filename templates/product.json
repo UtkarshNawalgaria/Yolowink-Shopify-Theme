@@ -70,7 +70,7 @@
         "show_sku": false,
         "show_taxes_included": false,
         "show_product_rating": false,
-        "show_sticky_add_to_cart": false,
+        "show_sticky_add_to_cart": true,
         "show_share_buttons": true,
         "help_page": "",
         "enable_video_autoplay": true,
