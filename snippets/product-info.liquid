@@ -185,18 +185,9 @@
                 {% endif %}
               </div>
               <div class="related-products">
-                <div class="related-products__item current">
-                  <a href="#">
-                    {{
-                      product.media[0]
-                      | image_url: width: 120
-                      | image_tag: sizes: '(max-width: 999px) 72px, 60px', widths: '60,72,120,144,180,216,240,288'
-                    }}
-                  </a>
-                </div>
                 {%- for _product in related_products -%}
                   {% assign first_image = _product.media[0] %}
-                  <div class="related-products__item">
+                  <div class="related-products__item{% if product.variants[0].sku == _product.variants[0].sku %} current{% endif %}">
                     <a href="{{ _product.url }}">
                       {{
                         first_image
