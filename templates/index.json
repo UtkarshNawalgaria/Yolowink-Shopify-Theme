@@ -177,33 +177,6 @@
         "full_width": false
       }
     },
-    "split_images_YkRXMG": {
-      "type": "split-images",
-      "blocks": {
-        "custom_JThQxd": {
-          "type": "custom",
-          "settings": {
-            "split-image": "shopify://shop_images/Shop_For_Her.jpg",
-            "button-text": "shop for her",
-            "link": "shopify://collections/womens-sunglasses"
-          }
-        },
-        "custom_VjAbA3": {
-          "type": "custom",
-          "settings": {
-            "split-image": "shopify://shop_images/Shop_For_Him_7fef3a52-1b33-4564-b418-186a15bd6860.jpg",
-            "button-text": "shop for him",
-            "link": "shopify://collections/mens-sunglasses"
-          }
-        }
-      },
-      "block_order": [
-        "custom_JThQxd",
-        "custom_VjAbA3"
-      ],
-      "settings": {
-      }
-    },
     "collection_list_aT9BQB": {
       "type": "collection-list",
       "blocks": {
@@ -262,6 +235,33 @@
         "title": "Shop Our Range",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "split_images_YkRXMG": {
+      "type": "split-images",
+      "blocks": {
+        "custom_JThQxd": {
+          "type": "custom",
+          "settings": {
+            "split-image": "shopify://shop_images/Shop_For_Her.jpg",
+            "button-text": "shop for her",
+            "link": "shopify://collections/womens-sunglasses"
+          }
+        },
+        "custom_VjAbA3": {
+          "type": "custom",
+          "settings": {
+            "split-image": "shopify://shop_images/Shop_For_Him_7fef3a52-1b33-4564-b418-186a15bd6860.jpg",
+            "button-text": "shop for him",
+            "link": "shopify://collections/mens-sunglasses"
+          }
+        }
+      },
+      "block_order": [
+        "custom_JThQxd",
+        "custom_VjAbA3"
+      ],
+      "settings": {
       }
     },
     "featured_collections_rFPjFR": {
@@ -386,8 +386,8 @@
     "slideshow",
     "featured_collections_wiQjwi",
     "video_carousel_i7zTzM",
-    "split_images_YkRXMG",
     "collection_list_aT9BQB",
+    "split_images_YkRXMG",
     "featured_collections_rFPjFR",
     "slideshow_jzP87j",
     "featured-collections",
