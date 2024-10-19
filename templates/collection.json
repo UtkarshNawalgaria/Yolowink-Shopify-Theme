@@ -50,7 +50,8 @@
         "image_text_color": "#ffffff",
         "image_overlay_color": "#000000",
         "image_overlay_opacity": 12,
-        "quick_links": ""
+        "quick_links": "",
+        "extra_class": "collection-content"
       }
     },
   },
