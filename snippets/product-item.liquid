@@ -293,7 +293,7 @@
               {% assign product_count_shown = 1 %}
               {% for _product in related_products %}
                 {% if product_count_shown <= product_count_to_show %}
-                  {% assign forloop_index = forloop.index | plus: 1 %}
+                  {% assign forloop_index = forloop.index %}
                   {% render 'new-product-variant-swatch',
                     color_name: color_name,
                     forloop_index: forloop_index,
