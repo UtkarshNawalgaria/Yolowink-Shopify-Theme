@@ -73,7 +73,7 @@
       </div>
     </image-with-text-overlay>
   {%- else -%}
-    <div class="container">
+    <div class="container{% if section.settings.extra_class != blank%} {{ section.settings.extra_class }}{% endif %}">
       <div class="page-header">
         {% comment %}
           {{- breadcrumb -}}
