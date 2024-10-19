@@ -18584,3 +18584,9 @@ shopify-payment-terms {
 .mini-cart__recommendations-list .product-item__info {
   flex-direction: column;
 }
+
+@media screen and (min-width: 741px) {
+  .collection-text-content .page-header__text-wrapper {
+    max-width: 75%;
+  }
+}
