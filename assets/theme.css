@@ -18588,5 +18588,6 @@ shopify-payment-terms {
 @media screen and (min-width: 741px) {
   .collection-text-content .page-header__text-wrapper {
     max-width: 75%;
+    text-align: start;
   }
 }
