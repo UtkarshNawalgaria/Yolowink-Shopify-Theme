@@ -5270,6 +5270,11 @@ var ProductImageZoom = class extends OpenableElement {
   }
   async _openPhotoSwipe() {
     const items = await this._buildItems();
+
+    // Remove sticky position from Product Media column
+    const productMedia = document.querySelector(".product__media");
+    productMedia.style.position = "static";
+    
     this.photoSwipeInstance = new window.ThemePhotoSwipe(this, PhotoSwipeUi, items, {
       index: items.findIndex((item) => item.selected),
       maxSpreadZoom: this.maxSpreadZoom,
@@ -5303,6 +5308,7 @@ var ProductImageZoom = class extends OpenableElement {
     });
     this.photoSwipeInstance.listen("close", () => {
       this.open = false;
+      productMedia.style.position = "sticky";
     });
     this.photoSwipeInstance.init();
   }
