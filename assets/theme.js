@@ -5315,7 +5315,29 @@ var ProductImageZoom = class extends OpenableElement {
   async _buildItems() {
     const activeImages = Array.from(this.mediaElement.querySelectorAll('.product__media-item[data-media-type="image"]:not(.is-filtered)')), product = await ProductLoader.load(this.getAttribute("product-handle"));
     return Promise.resolve(activeImages.map((item) => {
-      const matchedMedia = product["media"].find((media) => media.id === parseInt(item.getAttribute("data-media-id"))), supportedSizes = getSupportedSizes(matchedMedia, [200, 300, 400, 500, 600, 700, 800, 1e3, 1200, 1400, 1600, 1800, 2e3, 2200, 2400, 2600, 2800, 3e3]), desiredWidth = Math.min(supportedSizes[supportedSizes.length - 1], window.innerWidth);
+      let matchedMedia;
+      if (index == activeImages.length - 1) {
+        matchedMedia = {
+          "alt": null,
+          "id": parseInt(item.dataset.mediaId),
+          "position": index + 1,
+          "preview_image": {
+            "aspect_ratio": 1,
+            "height": 2000,
+            "width": 2000,
+            "src": item.dataset.mediaUrl
+          },
+          "aspect_ratio": 1,
+          "height": 2000,
+          "media_type": "image",
+          "src": item.dataset.mediaUrl,
+          "width": 2000
+        }
+      } else {
+        matchedMedia = product["media"].find((media) => media.id === parseInt(item.getAttribute("data-media-id")));
+      }
+      const supportedSizes = getSupportedSizes(matchedMedia, [200, 300, 400, 500, 600, 700, 800, 1e3, 1200, 1400, 1600, 1800, 2e3, 2200, 2400, 2600, 2800, 3e3]), desiredWidth = Math.min(supportedSizes[supportedSizes.length - 1], window.innerWidth);
+
       return {
         selected: item.classList.contains("is-selected"),
         src: getSizedMediaUrl(matchedMedia, `${Math.ceil(Math.min(desiredWidth * window.devicePixelRatio * this.maxSpreadZoom, 3e3))}x`),
