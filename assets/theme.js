@@ -5314,7 +5314,7 @@ var ProductImageZoom = class extends OpenableElement {
   }
   async _buildItems() {
     const activeImages = Array.from(this.mediaElement.querySelectorAll('.product__media-item[data-media-type="image"]:not(.is-filtered)')), product = await ProductLoader.load(this.getAttribute("product-handle"));
-    return Promise.resolve(activeImages.map((item) => {
+    return Promise.resolve(activeImages.map((item, index) => {
       let matchedMedia;
       if (index == activeImages.length - 1) {
         matchedMedia = {
