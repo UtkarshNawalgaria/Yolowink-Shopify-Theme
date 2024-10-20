@@ -14779,6 +14779,7 @@ input:checked
       var(--grid-column-width) * 10 + var(--grid-gap) * 10
     );
     width: var(--product-media-width);
+    position: sticky;
   }
 
   .product__info {
@@ -15202,7 +15203,6 @@ input:checked
     flex-direction: row-reverse;
     align-items: flex-start;
     display: flex;
-    position: sticky;
     top: 100px;
   }
 
