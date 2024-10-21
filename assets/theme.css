@@ -14926,6 +14926,7 @@ input:checked
 .product__thumbnail > img {
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: top;
 }
 
 .product__thumbnail .placeholder-background {
