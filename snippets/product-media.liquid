@@ -82,7 +82,10 @@
           <div id="product-{{ section.id }}-{{ media.id }}" class="product__media-item {% if is_media_filtered %}is-filtered{% endif %} {% if selected_media.id == media.id %}is-initial-selected is-selected{% endif %}" data-media-type="{{ media.media_type }}" data-media-id="{{ media.id }}" data-original-position="{{ forloop.index0 }}">
             {%- case media.media_type -%}
               {%- when 'image' -%}
+                <div class="product__media-image-wrapper aspect-ratio aspect-ratio--natural" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: 1">
+                {% comment %}
                 <div class="product__media-image-wrapper aspect-ratio aspect-ratio--natural" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }}">
+                {% endcomment %}
                   {%- assign should_reveal = false -%}
                   {%- assign loading = 'eager' -%}
 
