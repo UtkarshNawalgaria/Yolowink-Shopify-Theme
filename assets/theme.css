@@ -18596,3 +18596,7 @@ shopify-payment-terms {
     max-width: 75%;
   }
 }
+
+.product-form__image-list {
+  display: flex;
+}

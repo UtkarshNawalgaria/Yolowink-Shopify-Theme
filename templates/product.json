@@ -55,6 +55,22 @@
             "heading": "Product Specification",
             "field_list": "Frame Type,Frame Shape,Frame Material,Lens Type,Lens Color"
           }
+        },
+        "image_list_HwjFJH": {
+          "type": "image-list",
+          "settings": {
+            "image1": "shopify://shop_images/Yolowink_UV_Protection.jpg",
+            "image2": "shopify://shop_images/Yolowink_Reduces_Glare.jpg"
+          }
+        },
+        "image_8dpqDB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Yolowink_Polarized.jpg",
+            "image_alignment": "center",
+            "image_width": 150,
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -63,7 +79,9 @@
         "buy_buttons",
         "related_products",
         "description_hJDVw4",
-        "product_specification_KTwhqh"
+        "product_specification_KTwhqh",
+        "image_list_HwjFJH",
+        "image_8dpqDB"
       ],
       "settings": {
         "show_vendor": false,
@@ -108,10 +126,10 @@
         },
         "liquid_rrzchn": {
           "type": "liquid",
-          "disabled": true,
+          "disabled": false,
           "settings": {
             "title": "More Info",
-            "liquid": "<p><strong>Net Content per Product</strong> - 1N</p>\n<p><strong>Style Number</strong> - {{ product.selected_or_first_available_variant.sku }}</p>\n<p><strong>MRP:</strong> {{ product.selected_or_first_available_variant.price | money }} (Inclusive of all Taxes)</p>\n<p><strong>Manufactured by:</strong>\nKDM Eyewear LLP - S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.\n</p>\n<p><strong>Marketed by:</strong>\nKDM Eyewear LLP - S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.\n</p>\n<p><strong>Country of origin:</strong> India</p>\n<p><strong>Contact Support Executive incase of complaint</strong></p>\n<p><strong>Consumer Care Number: </strong>+91 9594934422</p>\n<p><strong>Consumer Care Email:</strong> support@yolowink.com</p>\n<p><strong>Consumer Care Address:</strong> KDM Eyewear LLP - S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.</p>"
+            "liquid": "<p><strong>Net Content per Product</strong> - 1N</p>\n<p><strong>Style Number</strong> - {{ product.selected_or_first_available_variant.sku }}</p>\n<p><strong>MRP:</strong> {{ product.selected_or_first_available_variant.price | money }} (Inclusive of all Taxes)</p>\n<p><strong>Packed and Marketed by:</strong>\nKDM Eyewear LLP - S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.\n<p><strong>Country of origin:</strong> India</p>\n<p><strong>Contact Support Executive incase of complaint: </strong>Jesal Panchal</p>\n<p><strong>Consumer Care Number: </strong>+91 9594934422</p>\n<p><strong>Consumer Care Email:</strong> support@yolowink.com</p>\n<p><strong>Consumer Care Address:</strong> KDM Eyewear LLP - S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.</p>"
           }
         }
       },

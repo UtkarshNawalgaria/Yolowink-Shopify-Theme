@@ -205,14 +205,37 @@
       ----------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
       {%- when 'image' -%}
-        {% if block.settings.image != blank %}
-          <div class="product-form__image product-form__image--{{ block.settings.image_alignment }}" {{ block.shopify_attributes }}>
+        {% assign product_metafield_value = product.metafields.custom[block.settings.condition_field] %}
+
+        {% if block.settings.image != blank and product_metafield_value == block.settings.condition_value %}
+          <div
+            class="product-form__image{% if block.settings.full_width == false %} product-form__image--{{ block.settings.image_alignment }}{% endif %}"
+            {{ block.shopify_attributes }}
+          >
             {%- capture image_sizes -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 }}, {{ block.settings.image_width | times: 3 }}{%- endcapture -%}
             {%- capture sizes_attribute -%}{{ block.settings.image_width }}px{%- endcapture -%}
             {%- capture style_attribute -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
-            {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: image_sizes, style: style_attribute -}}
+            {% if block.settings.full_width %}
+              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy' -}}
+            {% else %}
+              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: image_sizes, style: style_attribute -}}
+            {% endif %}
           </div>
         {%- endif -%}
+
+      {%- when 'image-list' -%}
+        <div class="product-form__image-list">
+          {% if block.settings.image1 != blank %}
+            <div class="product-form__image" {{ block.shopify_attributes }}>
+              {{- block.settings.image1 | image_url: width: block.settings.image1.width | image_tag: loading: 'lazy' -}}
+            </div>
+          {%- endif -%}
+          {% if block.settings.image2 != blank %}
+            <div class="product-form__image" {{ block.shopify_attributes }}>
+              {{- block.settings.image2 | image_url: width: block.settings.image2.width | image_tag: loading: 'lazy' -}}
+            </div>
+          {%- endif -%}
+        </div>
 
       {%- comment -%}
       ----------------------------------------------------------------------------------------------------------------
@@ -444,7 +467,11 @@
             {%- render 'store-availability', product_variant: product.selected_or_first_available_variant -%}
           </store-pickup>
         {%- endif -%}
-
+      {%- comment -%}
+      ----------------------------------------------------------------------------------------------------------------
+      PRODUCT SPECIFICATIONS
+      ----------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
       {% when 'product_specification' %}
         {% assign value_count = 0 %}
         {% assign metafield_keys = block.settings.field_list | split: ',' %}

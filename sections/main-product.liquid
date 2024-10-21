@@ -399,6 +399,12 @@
           "default": "left"
         },
         {
+          "type": "checkbox",
+          "id": "full_width",
+          "label": "Full Width",
+          "default": true
+        },
+        {
           "type": "range",
           "id": "image_width",
           "min": 50,
@@ -412,6 +418,24 @@
           "type": "richtext",
           "id": "text",
           "label": "Image Text"
+        },
+        {
+          "type": "header",
+          "content": "Image Conditions"
+        },
+        {
+          "type": "text",
+          "id": "condition_field",
+          "label": "Condition Field",
+          "default": "lens_type",
+          "info": "Give a Product Metafield Name"
+        },
+        {
+          "type": "text",
+          "id": "condition_value",
+          "label": "Condition Value",
+          "default": "Polarized",
+          "info": "Provide one of the values of the above given metafield"
         }
       ]
     },
@@ -563,6 +587,23 @@
           "label": "Field List",
           "info": "Add comma separated values that represent a metafield created for the product",
           "placeholder": "Fabric,Work,Color"
+        }
+      ]
+    },
+    {
+      "type": "image-list",
+      "name": "Image List",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
         }
       ]
     }
