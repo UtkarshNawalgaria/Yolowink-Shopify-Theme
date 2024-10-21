@@ -7,19 +7,6 @@
   font-variation-settings: "wdth" 100;
 }
 
-.button--primary {
-  background: transparent;
-  border: 3px solid #fff;
-  color: #fff;
-  font-weight: bolder;
-  /* font-size: 20px !important; */
-  letter-spacing: 0;
-}
-.button--primary:hover {
-  background: #000000;
-  border: none;
-  border: 3px solid #000000;
-}
 .button--custom {
   color: #000000;
   border: 3px solid #000000;
