@@ -77,7 +77,7 @@
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "show_thumbnails_on_mobile": true,
-        "desktop_thumbnails_position": "bottom",
+        "desktop_thumbnails_position": "left",
         "transition_effect": "slide"
       }
     },
