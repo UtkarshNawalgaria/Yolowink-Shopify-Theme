@@ -2271,6 +2271,10 @@ p + .button-group,
     position: relative;
   }
 
+  .aspect-ratio--natural img {
+    width: 100%;
+  }
+
   .aspect-ratio--square {
     aspect-ratio: 1;
   }
