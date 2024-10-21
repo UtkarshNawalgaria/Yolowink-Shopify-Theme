@@ -18543,11 +18543,6 @@ shopify-payment-terms {
   width: 50%;
 }
 
-.product-form__add-button {
-  background: var(--jdgm-primary-color) !important;
-  color: white;
-}
-
 @media screen and (min-width: 741px) {
   .product-item {
     border: 1px solid #e7e7e7;
