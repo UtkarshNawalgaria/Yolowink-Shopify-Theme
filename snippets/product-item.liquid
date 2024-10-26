@@ -12,6 +12,7 @@
   assign related_products = product.metafields['shopify--discovery--product_recommendation'].related_products.value
   assign related_products = related_products | concat: product
   assign related_products_count = related_products | reverse | reverse | size
+  assign related_products_count = related_products_count | minus: 1
 %}
 
 <product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}" {% if reveal %}reveal{% endif %}>
@@ -289,17 +290,26 @@
             <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
               {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
               {% capture color_name %}{{ section.id }}-{{ block.id }}-{{ product.id }}{% endcapture %}
-              {% assign product_count_to_show = 4 %}
+              {% assign product_count_to_show = 3 %}
               {% assign product_count_shown = 1 %}
+
+              {% render 'new-product-variant-swatch',
+                color_name: color_name,
+                forloop_index: 1,
+                swatch_product: product
+              %}
+
               {% for _product in related_products %}
-                {% if product_count_shown <= product_count_to_show %}
-                  {% assign forloop_index = forloop.index %}
-                  {% render 'new-product-variant-swatch',
-                    color_name: color_name,
-                    forloop_index: forloop_index,
-                    swatch_product: _product
-                  %}
-                  {% assign product_count_shown = product_count_shown | plus: 1 %}
+                {% if _product.handle != product.handle %}
+                  {% if product_count_shown <= product_count_to_show %}
+                    {% assign forloop_index = product_count_shown | plus: 1 %}
+                    {% render 'new-product-variant-swatch',
+                      color_name: color_name,
+                      forloop_index: forloop_index,
+                      swatch_product: _product
+                    %}
+                    {% assign product_count_shown = product_count_shown | plus: 1 %}
+                  {% endif %}
                 {% endif %}
               {% endfor %}
               {% assign product_count_left = related_products_count | minus: product_count_shown | plus: 1 %}
