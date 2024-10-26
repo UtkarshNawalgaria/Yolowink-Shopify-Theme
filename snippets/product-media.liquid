@@ -1,13 +1,6 @@
 {%- if product.media.size > 0 -%}
   {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
 
-  {%- comment -%}
-  IMPLEMENTATION NOTE: Shopify does not natively offers a way to create a set of images per variant. This is often
-    pretty limited when you have a lot of colors and would like to only see the images specific to a given color. To
-    goes around that, Focal offers a hack using alt tags whose usage is described here: https://support.maestrooo.com/article/187-product-creating-variant-image-set
-    The implementation is rather complex and inefficient due to lot of string parsings, but it is, unfortunately, the
-    only way to do it on Shopify right now.
-  {%- endcomment -%}
   {% liquid
     assign product_price = product.price
     if product_price < 100000

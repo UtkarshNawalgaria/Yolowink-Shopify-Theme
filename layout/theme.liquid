@@ -1,12 +1,3 @@
-{%- comment -%}
-------------------------------------------------------------------------------------------------------------------------
-NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing this theme as much as we did for
-  developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you
-  hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including
-  all events, dependencies...) in the "custom.js" file, located in the Assets folder.
-------------------------------------------------------------------------------------------------------------------------
-{%- endcomment -%}
-
 <!doctype html>
 
 {%- assign direction = 'ltr' -%}
@@ -20,14 +11,14 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="theme-color" content="{{ settings.header_background }}">
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-KTT5NF6C"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'GT-KTT5NF6C');
     </script>
 
@@ -58,11 +49,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     <link rel="preload" as="script" href="{{ 'vendor.js' | asset_url }}">
     <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
 
-    {%- comment -%}
-      IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
-      product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
-      libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
-    {%- endcomment -%}
     {%- if request.page_type == 'product' -%}
       {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
 

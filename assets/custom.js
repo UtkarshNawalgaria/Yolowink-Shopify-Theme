@@ -3,9 +3,6 @@
  *
  * Include your custom JavaScript here.
  *
- * The theme Focal has been developed to be easily extensible through the usage of a lot of different JavaScript
- * events, as well as the usage of custom elements (https://developers.google.com/web/fundamentals/web-components/customelements)
- * to easily extend the theme and re-use the theme infrastructure for your own code.
  *
  * The technical documentation is summarized here.
  *
