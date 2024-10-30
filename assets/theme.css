@@ -18600,3 +18600,16 @@ shopify-payment-terms {
 .product-form__image-list {
   display: flex;
 }
+
+.product-form__package-information {
+  display: flex;
+  gap: 2rem;
+}
+
+.product-form__package-information h4 {
+  margin-block-end: 10px;
+}
+
+.product-form__package-information ul {
+  font-size: 14px;
+}

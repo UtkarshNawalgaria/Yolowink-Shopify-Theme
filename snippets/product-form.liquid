@@ -205,21 +205,39 @@
       ----------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
       {%- when 'image' -%}
-        {% assign product_metafield_value = product.metafields.custom[block.settings.condition_field] %}
+        {% liquid
+          assign show_image = false
+          assign product_metafield_value = product.metafields.custom[block.settings.condition_field]
 
-        {% if block.settings.image != blank and product_metafield_value == block.settings.condition_value %}
+          if block.settings.condition_field != blank and product_metafield_value == block.settings.condition_value
+            assign show_image = true
+          endif
+
+          if block.settings.condition_field == blank
+            assign show_image = true
+          endif
+        %}
+
+        {% if block.settings.image != blank and show_image %}
           <div
             class="product-form__image{% if block.settings.full_width == false %} product-form__image--{{ block.settings.image_alignment }}{% endif %}"
             {{ block.shopify_attributes }}
           >
-            {%- capture image_sizes -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 }}, {{ block.settings.image_width | times: 3 }}{%- endcapture -%}
-            {%- capture sizes_attribute -%}{{ block.settings.image_width }}px{%- endcapture -%}
-            {%- capture style_attribute -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
-            {% if block.settings.full_width %}
-              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy' -}}
-            {% else %}
-              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: image_sizes, style: style_attribute -}}
-            {% endif %}
+            <div>
+              <div>
+                {%- capture image_sizes -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 }}, {{ block.settings.image_width | times: 3 }}{%- endcapture -%}
+                {%- capture sizes_attribute -%}{{ block.settings.image_width }}px{%- endcapture -%}
+                {%- capture style_attribute -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
+                {% if block.settings.full_width %}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy' -}}
+                {% else %}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: image_sizes, style: style_attribute -}}
+                {% endif %}
+              </div>
+              {% if block.settings.text != blank %}
+                <div class="rte">{{ block.settings.text }}</div>
+              {% endif %}
+            </div>
           </div>
         {%- endif -%}
 
@@ -514,6 +532,28 @@
             </details>
           </div>
         {% endif %}
+
+      {% when 'package-information' %}
+        {% liquid
+          assign product_price = product.price
+          assign package = blank
+          if product_price < 100000
+            assign package = shop.metaobjects.package['package-below-1000']
+          elsif product_price < 200000
+            assign package = shop.metaobjects.package['package-below-2000']
+          else
+            assign package = shop.metaobjects.package['package-below-3000']
+          endif
+        %}
+        <div class="product-form__package-information">
+          <div>
+            {{ package.image | image_url: width: 150 | image_tag: loading: 'lazy', alt: 'Yolowink Product Packaging' }}
+          </div>
+          <div>
+            <h4>What's included in the package</h4>
+            {{ package.included_contents | metafield_tag }}
+          </div>
+        </div>
     {%- endcase -%}
   {%- endfor -%}
 

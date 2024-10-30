@@ -71,6 +71,10 @@
             "image_width": 150,
             "text": ""
           }
+        },
+        "package_information": {
+          "type": "package-information",
+          "settings": {}
         }
       },
       "block_order": [
@@ -80,8 +84,9 @@
         "related_products",
         "description_hJDVw4",
         "product_specification_KTwhqh",
+        "package_information",
         "image_list_HwjFJH",
-        "image_8dpqDB"
+        "image_8dpqDB",
       ],
       "settings": {
         "show_vendor": false,

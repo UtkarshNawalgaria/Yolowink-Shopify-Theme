@@ -421,6 +421,35 @@
         },
         {
           "type": "header",
+          "content": "Block Layout"
+        },
+        {
+          "type": "select",
+          "id": "block_layout",
+          "label": "Layout",
+          "options": [
+            {
+              "label": "Vertical",
+              "value": "vertical"
+            },
+            {
+              "label": "Vertical Reverse",
+              "value": "vertical-reverse"
+            },
+            {
+              "label": "Horizontal",
+              "value": "horizontal"
+            },
+            {
+              "label": "Horizontal Reverse",
+              "value": "horizontal-reverse"
+            }
+          ],
+          "default": "vertical",
+          "info": "Only applies if both text and image are provided."
+        },
+        {
+          "type": "header",
           "content": "Image Conditions"
         },
         {
@@ -606,6 +635,12 @@
           "label": "Image 2"
         }
       ]
+    },
+    {
+      "type": "package-information",
+      "name": "Package Information",
+      "limit": 1,
+      "settings": []
     }
   ],
   "settings": [
