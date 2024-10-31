@@ -17,10 +17,8 @@
 
 <product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}" {% if reveal %}reveal{% endif %}>
   {%- capture product_labels -%}
-    {%- for tag in product.tags -%}
-      {%- if tag contains '__label' -%}
-        <span class="label label--custom{% if tag contains '__label2' %}2{% endif %}">{{ tag | split: ':' | last }}</span>
-      {%- endif -%}
+    {%- for tag in product.metafields.custom.feature_tags.value -%}
+      <span class="label label--custom">{{ tag }}</span>
     {%- endfor -%}
 
     {%- unless product.available -%}
@@ -41,7 +39,7 @@
   {%- endcapture -%}
 
   <div class="product-item__image-wrapper {% if settings.show_secondary_image and product.media.size > 1 and hide_secondary_image != true %}product-item__image-wrapper--multiple{% endif %}">
-    {%- if product_labels != blank and reduced_content != true -%}
+    {%- if product_labels != blank -%}
       <div class="product-item__label-list label-list">
         {{- product_labels -}}
       </div>

@@ -56,34 +56,8 @@
             "image_2_heading": "For Her",
             "image_2_text": "",
             "image_2_link": "shopify://collections/womens-sunglasses",
-            "image_3_heading": "",
-            "image_3_text": "",
-            "image_3_link": "",
-            "image_4_heading": "",
-            "image_4_text": "",
-            "image_4_link": "",
-            "image_5_heading": "",
-            "image_5_text": "",
-            "image_5_link": "",
-            "image_6_heading": "",
-            "image_6_text": "",
-            "image_6_link": ""
-          }
-        },
-        "mega_menu_RhmRQq": {
-          "type": "mega_menu",
-          "settings": {
-            "menu_item": "ACCESSORIES",
-            "images_position": "right",
-            "image_1": "shopify://shop_images/For_Him.png",
-            "image_1_heading": "For Him",
-            "image_1_text": "",
-            "image_1_link": "shopify://collections/accessories",
-            "image_2": "shopify://shop_images/For_Her.png",
-            "image_2_heading": "For Her",
-            "image_2_text": "",
-            "image_2_link": "shopify://collections/sunglasses",
-            "image_3_heading": "",
+            "image_3": "shopify://shop_images/unisex.jpg",
+            "image_3_heading": "Unisex",
             "image_3_text": "",
             "image_3_link": "",
             "image_4_heading": "",
@@ -99,8 +73,7 @@
         }
       },
       "block_order": [
-        "mega_menu_VFgpTp",
-        "mega_menu_RhmRQq"
+        "mega_menu_VFgpTp"
       ],
       "settings": {
         "enable_sticky_header": true,

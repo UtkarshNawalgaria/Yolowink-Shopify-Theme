@@ -18613,3 +18613,7 @@ shopify-payment-terms {
 .product-form__package-information ul {
   font-size: 14px;
 }
+
+.product-item__label-list .label {
+  font-size: 10px;
+}
