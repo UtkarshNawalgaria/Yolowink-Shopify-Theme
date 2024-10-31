@@ -17,10 +17,10 @@
     {%- endif -%}
 
     {% unless featured %}
-      <h1 class="product-meta__title heading h3">{{ product.title }}</h1>
+      <h1 class="product-meta__title heading h3">{{ product.title }}{% if product.metafields.custom.lens_type contains 'Polarized' %} (Polarized){% endif %}</h1>
     {% else %}
       <h2 class="product-meta__title heading h3">
-        <a href="{{ product.url }}">{{ product.title }}</a>
+      <a href="{{ product.url }}">{{ product.title }}</a>
       </h2>
     {% endunless %}
 
