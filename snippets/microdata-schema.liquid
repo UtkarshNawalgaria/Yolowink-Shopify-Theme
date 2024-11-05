@@ -122,7 +122,6 @@
   {%- assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" -%}
 
   <script type="application/ld+json">
-  [
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -133,7 +132,10 @@
         "target": {{ potential_action_target | json }},
         "query-input": "required name=search_term_string"
       }
-    },
+    }
+  </script>
+
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -154,8 +156,9 @@
           {%- endfor -%}
         ],
       {%- endif -%}
-      "url": {{ shop.url | append: page.url | json }}
+      "url": {{ shop.url | append: page.url | json }},
+      "telephone": "+919594934422",
+      "email": "support@yolowink.com"
     }
-  ]
   </script>
 {%- endif -%}
