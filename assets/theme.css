@@ -1695,7 +1695,6 @@ p + .button-group,
 
 .section__color-wrapper {
   background: rgb(var(--section-background, var(--background)));
-  display: flow-root;
 }
 
 .section__color-wrapper--boxed {
@@ -18584,6 +18583,10 @@ shopify-payment-terms {
 
 .mini-cart__recommendations-list .product-item__info {
   flex-direction: column;
+}
+
+.mini-cart__recommendations-list .product-item__label-list {
+  display: none;
 }
 
 /* Collection Page Content */

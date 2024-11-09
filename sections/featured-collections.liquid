@@ -63,7 +63,7 @@
   }
 </style>
 
-<section class="section {% unless blends_with_background %}section--flush{% endunless %}">
+<section class="section{% unless blends_with_background %} section--flush{% endunless %}">
   <div class="section__color-wrapper">
     <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
       {%- if section.blocks.size > 1 or section.settings.title != blank or section.settings.subheading != blank or section.settings.content != blank -%}
@@ -121,7 +121,16 @@
                     {%- assign smallest_image_aspect_ratio = smallest_image_aspect_ratio | at_least: product.featured_media.aspect_ratio -%}
                   {%- endif -%}
 
-                  {%- render 'product-item', product: product, collection: collection, show_cta: section.settings.show_cta, block: block, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
+                  {%- render 'product-item',
+                    product: product,
+                    collection: collection,
+                    show_cta: section.settings.show_cta,
+                    block: block,
+                    sizes_attribute: sizes_attribute,
+                    reveal: settings.stagger_products_apparition,
+                    section_index: section.index,
+                    forloop_index: forloop.index
+                  -%}
                 {%- else -%}
                   {%- assign smallest_image_aspect_ratio = 1 -%}
 
