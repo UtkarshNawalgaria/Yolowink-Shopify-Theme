@@ -16,7 +16,7 @@
               <div class="video-wrapper video-wrapper--native" style="--aspect-ratio: 2/3;">
                 {{-
                   block.settings.video
-                  | video_tag: controls: false, autoplay: true, muted: true, playsinline: true, loop: true
+                  | video_tag: image_size: '300x', controls: false, autoplay: true, muted: true, playsinline: true, loop: true, width: 300
                 -}}
               </div>
               {% if block.settings.product != blank %}

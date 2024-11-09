@@ -13,6 +13,7 @@
   assign related_products = related_products | concat: product
   assign related_products_count = related_products | reverse | reverse | size
   assign related_products_count = related_products_count | minus: 1
+  assign product_item_image_width = 400
 %}
 
 <product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}" {% if reveal %}reveal{% endif %}>
@@ -53,7 +54,7 @@
       {% endif %}
 
       {%- if product.featured_media -%}
-        {{ product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: loading_value, sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: product.featured_media.id }}
+        {{ product.featured_media | image_url: width: product_item_image_width | image_tag: loading: loading_value, sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: product.featured_media.id }}
       {%- endif -%}
 
       {%- if settings.product_color_display == 'swatch' -%}
@@ -63,7 +64,7 @@
        		    {%- for variant in product.variants -%}
       			    {%- if variant.options contains color_option and variant.featured_media != blank -%}
           		    {%- unless variant.featured_media == product.featured_media -%}
-                    {{ variant.featured_media | image_url: width: variant.featured_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: variant.featured_media.id, hidden: true }}
+                    {{ variant.featured_media | image_url: width: product_item_image_width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: variant.featured_media.id, hidden: true }}
       				      {% break %}
           		    {%- endunless -%}
       			    {%- endif -%}
@@ -73,7 +74,7 @@
         {%- endfor -%}
         {% if related_products_count > 0 %}
           {% for _product in related_products %}
-            {{ _product.featured_media | image_url: width: _product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: _product.featured_media.id, hidden: true }}
+            {{ _product.featured_media | image_url: width: product_item_image_width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: _product.featured_media.id, hidden: true }}
           {% endfor %}
         {% endif %}
       {%- endif -%}

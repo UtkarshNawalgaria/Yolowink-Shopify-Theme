@@ -1,52 +1,82 @@
-{{ 'split-image.css' |  asset_url |  stylesheet_tag}}
-  
+<style>
+  .split-image-wrapper {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+  }
+  .split-image-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .split-image {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    background: rgba(var(--section-blocks-overlay-color), var(--section-blocks-overlay-opacity));
+  }
+
+  .split-image .button-wrapper {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .button:not(.button--text) {
+    letter-spacing: 0;
+  }
+  @media screen and (max-width: 749px) {
+    .split-image-wrapper {
+      flex-wrap: wrap;
+    }
+  }
+</style>
+
 <div class="split-image-wrapper">
-    {% for block in section.blocks %}
-       
-        <div class="split-image">
-            <img src="{{ block.settings.split-image |  img_url: 'master'}}">
-            <div class="button-wrapper">
-            <a href="{{ block.settings.link }}" class="button button--primary">{{ block.settings.button-text }}</a>
-        </div>
-        </div>
-        
-       
-    {% endfor %}
+  {% for block in section.blocks %}
+    <div class="split-image">
+      <img src="{{ block.settings.split-image |  img_url: 'master'}}">
+      <div class="button-wrapper">
+        <a href="{{ block.settings.link }}" class="button button--primary">{{ block.settings['button-text'] }}</a>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 {% schema %}
 {
-    "name": "Split image ",
-    "class": "split-image",
-    "settings": [   ],
-    "blocks": [
+  "name": "Split image ",
+  "class": "split-image",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Split image",
+      "type": "custom",
+      "settings": [
         {
-            "name": "Split image",
-            "type": "custom",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "split-image",
-                    "label": "Split Image"
-                },
-                {
-                    "type": "text",
-                    "id": "button-text",
-                    "label": "Button label"
-                },
-                {
-                    "type": "url",
-                    "id": "link",
-                    "label": "Button label"
-                }
-            ]
-            
-        }
-    ],
-    "presets": [
+          "type": "image_picker",
+          "id": "split-image",
+          "label": "Split Image"
+        },
         {
-            "name": "Split image"
+          "type": "text",
+          "id": "button-text",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button label"
         }
-    ]
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split image"
+    }
+  ]
 }
 {% endschema %}
