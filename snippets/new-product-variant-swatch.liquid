@@ -18,10 +18,6 @@
   assign color_value = lens_color_object.color
 %}
 
-<script>
-  console.log('{{ lens_color }}, {{ color_value }}');
-</script>
-
 {%- capture color_id -%}{{ color_name }}-{{ forloop_index }}{%- endcapture -%}
 
 <div class="color-swatch {% if color_value == blank %}color-swatch--white{% endif %}">

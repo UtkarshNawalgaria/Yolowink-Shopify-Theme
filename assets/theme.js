@@ -2002,11 +2002,11 @@ var template = `
       contain: layout;
       position: relative;
     }
-    
+
     :host([hidden]) {
       display: none;
     }
-    
+
     s {
       position: absolute;
       top: 0;
@@ -5274,7 +5274,7 @@ var ProductImageZoom = class extends OpenableElement {
     // Remove sticky position from Product Media column
     const productMedia = document.querySelector(".product__media");
     productMedia.style.position = "static";
-    
+
     this.photoSwipeInstance = new window.ThemePhotoSwipe(this, PhotoSwipeUi, items, {
       index: items.findIndex((item) => item.selected),
       maxSpreadZoom: this.maxSpreadZoom,
@@ -6560,13 +6560,13 @@ var CartNotification = class extends CustomHTMLElement {
                 <rect width="20" height="20" rx="10" fill="currentColor"></rect>
                 <path d="M6 10L9 13L14 7" fill="none" stroke="rgb(var(--success-color))" stroke-width="2"></path>
               </svg>
-              
+
               <div class="cart-notification__text-wrapper">
                 <span class="cart-notification__heading heading hidden-phone">${window.themeVariables.strings.cartItemAdded}</span>
                 <span class="cart-notification__heading heading hidden-tablet-and-up">${window.themeVariables.strings.cartItemAddedShort}</span>
                 <a href="${window.themeVariables.routes.cartUrl}" class="cart-notification__view-cart link" data-no-instant>${window.themeVariables.strings.cartViewCart}</a>
               </div>
-              
+
               ${closeButtonHtml}
             </div>
           </div>
@@ -6582,11 +6582,11 @@ var CartNotification = class extends CustomHTMLElement {
                 <rect width="20" height="20" rx="10" fill="currentColor"></rect>
                 <path d="M9.6748 13.2798C9.90332 13.0555 10.1763 12.9434 10.4937 12.9434C10.811 12.9434 11.0819 13.0555 11.3062 13.2798C11.5347 13.5041 11.6489 13.7749 11.6489 14.0923C11.6489 14.4097 11.5347 14.6847 11.3062 14.9175C11.0819 15.146 10.811 15.2603 10.4937 15.2603C10.1763 15.2603 9.90332 15.146 9.6748 14.9175C9.45052 14.6847 9.33838 14.4097 9.33838 14.0923C9.33838 13.7749 9.45052 13.5041 9.6748 13.2798ZM9.56689 12.1816V5.19922H11.4141V12.1816H9.56689Z" fill="rgb(var(--error-color))"></path>
               </svg>
-              
+
               <div class="cart-notification__text-wrapper">
                 <span class="cart-notification__heading heading">${event.detail.error}</span>
               </div>
-              
+
               ${closeButtonHtml}
             </div>
           </div>
@@ -6762,6 +6762,51 @@ var ProductStickyForm = class extends HTMLElement {
   }
 };
 window.customElements.define("product-sticky-form", ProductStickyForm);
+
+class VideoCarousel extends HTMLElement {
+  constructor() {
+    super();
+
+    this.carousel = this.querySelector(".video-carousel");
+    this.videos = this.querySelectorAll('.video-carousel-item');
+    this.prevBtn = this.querySelector(".prev-btn");
+    this.nextBtn = this.querySelector(".next-btn");
+    this.currentVideoIndex = 0;
+    this.gutterWidth = getComputedStyle(document.documentElement)
+                          .getPropertyValue('--container-gutter').trim();
+    this.gutterWidth = this.gutterWidth.replace("px", "");
+    this.init();
+  }
+
+  init() {
+    this.prevBtn.addEventListener("click", () => this.prevVideo());
+    this.nextBtn.addEventListener("click", () => this.nextVideo());
+  }
+
+  nextVideo() {
+    if (this.currentVideoIndex < this.videos.length - 1) {
+      this.currentVideoIndex++;
+      this.scrollToVideo();
+    }
+  }
+
+  prevVideo() {
+    if (this.currentVideoIndex > 0) {
+      this.currentVideoIndex--;
+      this.scrollToVideo();
+    }
+  }
+
+  scrollToVideo() {
+    const videoWidth = this.videos[0].clientWidth;
+    const scrollableWidth = this.currentVideoIndex * (videoWidth + parseInt(this.gutterWidth));
+    this.carousel.scrollLeft = scrollableWidth;
+
+    this.prevBtn.style.display = this.currentVideoIndex > 0 ? "block" : "none"
+    this.nextBtn.style.display = this.currentVideoIndex == this.videos.length - 1 ? "none" : "block"
+  }
+}
+window.customElements.define("video-carousel", VideoCarousel);
 
 // js/theme.js
 (() => {

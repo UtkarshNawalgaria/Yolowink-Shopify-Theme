@@ -184,7 +184,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Artboard_1.jpg",
+            "image": "shopify://shop_images/sunglasses_under_1000.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -198,7 +198,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Artboard_2.jpg",
+            "image": "shopify://shop_images/sunglasses_under_2000.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -212,7 +212,7 @@
           "type": "collection",
           "settings": {
             "collection": "sunglasses-under-rs-3000",
-            "image": "shopify://shop_images/Artboard_3.jpg",
+            "image": "shopify://shop_images/sunglasses_under_3000.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -261,8 +261,7 @@
         "custom_JThQxd",
         "custom_VjAbA3"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "featured_collections_rFPjFR": {
       "type": "featured-collections",

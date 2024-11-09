@@ -5,48 +5,44 @@
         <h4 class="heading h3">{{ section.settings.heading }}</h4>
       </div>
     </header>
-    <div class="video-carousel">
-      {% for block in section.blocks %}
-        {% if block.settings.video != blank %}
-          <div class="video-carousel-item">
-            {% if block.settings.product != blank %}
-              <a href="{{ block.settings.product.url }}">
-            {% endif %}
-            <div class="video-wrapper video-wrapper--native" style="--aspect-ratio: 2/3;">
-              {{-
-                block.settings.video
-                | video_tag: controls: false, autoplay: true, muted: true, playsinline: true, loop: true
-              -}}
+    <video-carousel>
+      <div class="video-carousel">
+        {% for block in section.blocks %}
+          {% if block.settings.video != blank %}
+            <div class="video-carousel-item">
+              {% if block.settings.product != blank %}
+                <a href="{{ block.settings.product.url }}">
+              {% endif %}
+              <div class="video-wrapper video-wrapper--native" style="--aspect-ratio: 2/3;">
+                {{-
+                  block.settings.video
+                  | video_tag: controls: false, autoplay: true, muted: true, playsinline: true, loop: true
+                -}}
+              </div>
+              {% if block.settings.product != blank %}
+                </a>
+              {% endif %}
+              <div class="video-carousel__product-meta">
+                <a href="{{ block.settings.product.url }}">
+                  {{ block.settings.product.featured_media | image_url: width: 50 | image_tag: loading: 'eager' }}
+                  <h4>{{ block.settings.product.title }}</h4>
+                </a>
+              </div>
             </div>
-            {% if block.settings.product != blank %}
-              </a>
-            {% endif %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="nav-btns">
+        <button class="carousel-btn prev-btn">
+          {% render 'icon', icon: 'chevron-back' %}
+        </button>
+        <button class="carousel-btn next-btn">
+          {% render 'icon', icon: 'chevron-back' %}
+        </button>
+      </div>
+    </video-carousel>
   </div>
 </section>
-
-<style>
-  .section-{{ section.id }} .video-carousel {
-    display: flex;
-    gap: 24px;
-  }
-
-  @media screen and (max-width: 741px) {
-    .section-{{ section.id }} .video-carousel {
-      flex-direction: column;
-    }
-  }
-  .section-{{ section.id }} .video-carousel .video-carousel-item {
-    position: relative;
-  }
-
-  .section-{{ section.id }} video {
-    border-radius: 5px;
-  }
-</style>
 
 {% schema %}
 {

@@ -18637,3 +18637,90 @@ shopify-payment-terms {
 .product-form__package-information ul {
   font-size: 14px;
 }
+
+/* Video Carousel */
+.video-carousel {
+  display: flex;
+  gap: 24px;
+}
+
+.video-carousel .video-carousel-item {
+  position: relative;
+}
+
+video {
+  border-radius: 5px;
+}
+
+.video-carousel__product-meta {
+  text-align: center;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  background: rgba(0,0,0,.2);
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+
+.video-carousel h4 {
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.video-carousel img {
+	position: absolute;
+	top: -30px;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+video-carousel {
+  display: block;
+  position: relative;
+}
+
+video-carousel .nav-btns {
+  display: none;
+}
+
+@media screen and (max-width: 741px) {
+  .video-carousel {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .video-carousel .video-carousel-item {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+
+  video-carousel .nav-btns {
+    display: block;
+  }
+
+  video-carousel .nav-btns button {
+    background-color: white;
+    padding: 12px;
+  }
+
+  video-carousel .nav-btns .prev-btn,
+  video-carousel .nav-btns .next-btn {
+    position: absolute;
+    top: 50%;
+  }
+
+  video-carousel .nav-btns .prev-btn {
+    display: none;
+    left: 5px;
+  }
+
+  video-carousel .nav-btns .next-btn {
+    right: 5px;
+  }
+
+  video-carousel .nav-btns .next-btn .icon {
+    transform: rotate(180deg);
+  }
+}
