@@ -12,6 +12,25 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_EbF34z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/YW-Black_Friday_Banner.jpg",
+            "mobile_image": "shopify://shop_images/YW-Black_Friday_Mobile_Banner.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
         "slide-1": {
           "type": "image",
           "settings": {
@@ -30,30 +49,11 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "image_EkmhjF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/yw_flatlay_banner.jpg",
-            "mobile_image": "shopify://shop_images/yw_mobile_banner2.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
         }
       },
       "block_order": [
-        "slide-1",
-        "image_EkmhjF"
+        "image_EbF34z",
+        "slide-1"
       ],
       "settings": {
         "section_height": "small",
