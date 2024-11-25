@@ -28,7 +28,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 10
+            "overlay_opacity": 0
           }
         },
         "slide-1": {
