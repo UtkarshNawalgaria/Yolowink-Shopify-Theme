@@ -37,7 +37,7 @@
       ],
       "settings": {
         "section_height": "auto",
-        "transition_type": "sweep",
+        "transition_type": "fade",
         "autoplay": true,
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
