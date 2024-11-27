@@ -45,7 +45,7 @@
         "announcement_bar_position": "non_sticky",
         "announcement_text_size": "small",
         "autoplay": true,
-        "cycle_speed": 10,
+        "cycle_speed": 3,
         "background": "#000000",
         "text_color": "#ffffff",
         "button_background": "#56112a",

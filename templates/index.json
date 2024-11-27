@@ -33,6 +33,7 @@
         },
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/yw_model_banner2.jpg",
             "mobile_image": "shopify://shop_images/yw_mobile_banner3.jpg",
