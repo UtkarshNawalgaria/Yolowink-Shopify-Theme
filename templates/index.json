@@ -299,6 +299,7 @@
       "blocks": {
         "image_XzJRj4": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3.png",
             "mobile_image": "shopify://shop_images/3_8afaf47e-9329-45de-b9e6-ff2224a73587.png",
@@ -315,10 +316,29 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "image_mXnbDn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/YW-Collection_Page_Banner_1.webp",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
-        "image_XzJRj4"
+        "image_XzJRj4",
+        "image_mXnbDn"
       ],
       "settings": {
         "section_height": "auto",
