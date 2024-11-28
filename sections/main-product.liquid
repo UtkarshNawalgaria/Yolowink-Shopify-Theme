@@ -81,8 +81,8 @@
   </section>
 {%- else -%}
   {%- comment -%}
-  The quick shop HTML being very different, we render it here. On mobile and tablet/desktop, the product renders also
-  quite differently, as it is in a drawer on tablet/desktop, and a popover on mobile.
+    The quick shop HTML being very different, we render it here. On mobile and tablet/desktop, the product renders also
+    quite differently, as it is in a drawer on tablet/desktop, and a popover on mobile.
   {%- endcomment -%}
 
   {%- capture quick_buy_product_info -%}
@@ -192,7 +192,12 @@
       <header class="drawer__header">
         <p class="drawer__title heading h6">{{ 'product.form.choose_options' | t }}</p>
 
-        <button type="button" class="drawer__close-button tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        <button
+          type="button"
+          class="drawer__close-button tap-area"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}"
+        >
           {%- render 'icon' with 'close' -%}
         </button>
       </header>
@@ -209,7 +214,12 @@
       <header class="popover__header">
         {{- quick_buy_product_info -}}
 
-        <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        <button
+          type="button"
+          class="popover__close-button tap-area tap-area--large"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}"
+        >
           {%- render 'icon' with 'close' -%}
         </button>
       </header>
@@ -641,6 +651,58 @@
       "name": "Package Information",
       "limit": 1,
       "settings": []
+    },
+    {
+      "type": "countdown-timer",
+      "name": "Countdown timer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "end_date",
+          "label": "End date",
+          "placeholder": "2023-12-31 23:59",
+          "default": "2024-12-31",
+          "info": "Use format \"YYYY-MM-DD\". Expiration date is based on the [store primary timezone](/admin/settings/general)."
+        },
+        {
+          "type": "text",
+          "id": "end_time",
+          "label": "End time",
+          "default": "11:59",
+          "placeholder": "11:59",
+          "info": "Use 12-hour time convention in format \"HH:MM\""
+        },
+        {
+          "type": "radio",
+          "id": "period",
+          "label": "AM/PM",
+          "options": [
+            { "value": "am", "label": "AM" },
+            { "value": "pm", "label": "PM" }
+          ],
+          "default": "am"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_on_complete",
+          "label": "Hide section after end of timer",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "label": "Digits size",
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 12
+        }
+      ]
     }
   ],
   "settings": [

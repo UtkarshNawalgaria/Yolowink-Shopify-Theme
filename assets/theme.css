@@ -18838,3 +18838,37 @@ video-carousel .nav-btns {
 .shopify-section--collection-banner .breadcrumb--floating {
   position: initial !important;
 }
+
+.product-form__countdown-timer.hidden {
+  display: none;
+}
+
+.countdown__timer {
+  display: block;
+  margin-top: 20px;
+}
+
+.countdown__timer .heading {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.countdown__timer .countdown__datetime {
+  display: flex;
+  gap: 20px;
+}
+
+.countdown__timer .countdown__datetime .timer__digit {
+  font-size: 32px;
+}
+
+.countdown__timer .countdown__datetime .timer__unit {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 741px) {
+  .countdown__timer .heading {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}

@@ -200,7 +200,23 @@
               </div>
             </div>
           {% endif %}
-      {% endcase %}
+        {% when 'countdown-timer' %}
+          <div class="product-form__countdown-timer">
+            {%- render 'countdown-timer',
+              heading: block.settings.heading,
+              end_date: block.settings.end_date,
+              end_time: block.settings.end_time,
+              period: block.settings.period,
+              text_size_desktop: block.settings.text_size,
+              text_size_mobile: block.settings.text_size_mobile,
+              end_message: block.settings.end_message,
+              hide_on_complete: block.settings.hide_on_complete,
+              animation_order: animation_order,
+              animation_anchor: animation_anchor,
+              boxed: boxed
+            -%}
+          </div>
+        {% endcase %}
     {% endfor %}
   </product-meta>
 
