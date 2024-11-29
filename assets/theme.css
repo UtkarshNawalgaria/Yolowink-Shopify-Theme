@@ -18482,6 +18482,7 @@ shopify-payment-terms {
 @media screen and (max-width: 740px) {
   .shopify-section--main-product .container {
     padding-inline: calc(var(--container-gutter) / 2);
+    overflow: hidden;
   }
 }
 
