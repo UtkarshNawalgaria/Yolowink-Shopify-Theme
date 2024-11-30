@@ -1,18 +1,15 @@
 <style>
   .split-image-wrapper {
-    display: flex;
-    max-width: 100%;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat({{ section.blocks | size }}, 1fr);
   }
+
   .split-image-wrapper img {
-    width: 100%;
     max-width: 100%;
-    display: block;
+    height: auto;
   }
 
   .split-image {
-    width: 100%;
-    max-width: 100%;
     display: block;
     position: relative;
     background: rgba(var(--section-blocks-overlay-color), var(--section-blocks-overlay-opacity));
@@ -24,26 +21,34 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .button:not(.button--text) {
     letter-spacing: 0;
   }
+
   @media screen and (max-width: 749px) {
     .split-image-wrapper {
-      flex-wrap: wrap;
+      grid-template-columns: 1fr;
     }
   }
 </style>
 
-<div class="split-image-wrapper">
+<section class="split-image-wrapper">
   {% for block in section.blocks %}
     <div class="split-image">
-      <img src="{{ block.settings.split-image |  img_url: 'master'}}">
+      <a href="{{ block.settings.link }}">
+        {{ block.settings.image |
+          image_url: width: 1000 |
+          image_tag:
+            sizes: '(max-width: 749px) 500',
+            loading: 'lazy' }}
+      </a>
       <div class="button-wrapper">
-        <a href="{{ block.settings.link }}" class="button button--primary">{{ block.settings['button-text'] }}</a>
+        <a href="{{ block.settings.link }}" class="button button--primary">{{ block.settings.button_text }}</a>
       </div>
     </div>
   {% endfor %}
-</div>
+</section>
 
 {% schema %}
 {
@@ -57,12 +62,12 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "split-image",
-          "label": "Split Image"
+          "id": "image",
+          "label": "Image"
         },
         {
           "type": "text",
-          "id": "button-text",
+          "id": "button_text",
           "label": "Button label"
         },
         {

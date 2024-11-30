@@ -244,16 +244,16 @@
         "custom_JThQxd": {
           "type": "custom",
           "settings": {
-            "split-image": "shopify://shop_images/Shop_For_Her.jpg",
-            "button-text": "shop for her",
+            "image": "shopify://shop_images/Shop_For_Her.jpg",
+            "button_text": "shop for her",
             "link": "shopify://collections/womens-sunglasses"
           }
         },
         "custom_VjAbA3": {
           "type": "custom",
           "settings": {
-            "split-image": "shopify://shop_images/Shop_For_Him_7fef3a52-1b33-4564-b418-186a15bd6860.jpg",
-            "button-text": "shop for him",
+            "image": "shopify://shop_images/Shop_For_Him_7fef3a52-1b33-4564-b418-186a15bd6860.jpg",
+            "button_text": "shop for him",
             "link": "shopify://collections/mens-sunglasses"
           }
         }

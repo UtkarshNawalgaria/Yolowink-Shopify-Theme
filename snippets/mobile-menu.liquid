@@ -45,7 +45,7 @@
 
                 {%- capture image_push -%}
                   {%- assign menu_image = mega_menu_block.settings[image_setting] -%}
-                  {{- menu_image | image_url: width: menu_image.width | image_tag: loading: 'lazy', sizes: '270px', sizes: '270,540,810', class: 'mobile-nav__image' -}}
+                  {{- menu_image | image_url: width: 250 | image_tag: loading: 'eager', sizes: '270px', sizes: '270,540,810', class: 'mobile-nav__image' -}}
 
                   {%- if mega_menu_block.settings[image_heading_setting] != '' -%}
                     <p class="mobile-nav__image-heading heading heading--xsmall">{{ mega_menu_block.settings[image_heading_setting] }}</p>
