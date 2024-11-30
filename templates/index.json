@@ -244,7 +244,7 @@
         "custom_JThQxd": {
           "type": "custom",
           "settings": {
-            "image": "shopify://shop_images/Shop_For_Her.jpg",
+            "image": "shopify://shop_images/Female.webp",
             "button_text": "shop for her",
             "link": "shopify://collections/womens-sunglasses"
           }
@@ -252,15 +252,24 @@
         "custom_VjAbA3": {
           "type": "custom",
           "settings": {
-            "image": "shopify://shop_images/Shop_For_Him_7fef3a52-1b33-4564-b418-186a15bd6860.jpg",
+            "image": "shopify://shop_images/Male.webp",
             "button_text": "shop for him",
             "link": "shopify://collections/mens-sunglasses"
+          }
+        },
+        "custom_aQ4acY": {
+          "type": "custom",
+          "settings": {
+            "image": "shopify://shop_images/Unisex.webp",
+            "button_text": "Unisex",
+            "link": "shopify://collections/unisex-sunglasses"
           }
         }
       },
       "block_order": [
         "custom_JThQxd",
-        "custom_VjAbA3"
+        "custom_aQ4acY",
+        "custom_VjAbA3",
       ],
       "settings": {}
     },

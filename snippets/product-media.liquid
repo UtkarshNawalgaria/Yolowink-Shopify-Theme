@@ -60,17 +60,19 @@
 
       <flickity-carousel click-nav flickity-config="{{ flickity_config | escape }}" id="product-{{ section.id }}-{{ product.id }}-media-list" class="product__media-list">
         {%- for media in product.media -%}
-          {%- assign alt = media.alt -%}
-          {%- assign is_media_filtered = false -%}
-          {%- assign media_id_as_string = media.id | append: '' -%}
+          {% liquid
+            assign alt = media.alt
+            assign is_media_filtered = false
+            assign media_id_as_string = media.id | append: ''
 
-          {% if media.alt contains '#' %}
-            {%- assign alt = product.title -%}
-          {%- endif -%}
+            if media.alt contains '#'
+              assign alt = product.title
+            endif
 
-          {%- if filtered_media_ids contains media_id_as_string and media.alt != product.title -%}
-            {%- assign is_media_filtered = true -%}
-          {%- endif -%}
+            if filtered_media_ids contains media_id_as_string and media.alt != product.title
+              assign is_media_filtered = true
+            endif
+          %}
 
           <div id="product-{{ section.id }}-{{ media.id }}" class="product__media-item {% if is_media_filtered %}is-filtered{% endif %} {% if selected_media.id == media.id %}is-initial-selected is-selected{% endif %}" data-media-type="{{ media.media_type }}" data-media-id="{{ media.id }}" data-original-position="{{ forloop.index0 }}">
             {%- case media.media_type -%}
