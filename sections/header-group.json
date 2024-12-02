@@ -14,10 +14,10 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "message_VDKN9F": {
+        "message_mwKdCW": {
           "type": "message",
           "settings": {
-            "text": "COD Available",
+            "text": "Buy 1 Get 10% | Buy 2 Get 20% off",
             "learn_more_text": "Learn more",
             "title": "",
             "content": "",
@@ -25,10 +25,10 @@
             "button_link": ""
           }
         },
-        "message_mwKdCW": {
+        "message_VDKN9F": {
           "type": "message",
           "settings": {
-            "text": "Buy 1 Get 10% | Buy 2 Get 20% off",
+            "text": "COD Available",
             "learn_more_text": "Learn more",
             "title": "",
             "content": "",
@@ -49,8 +49,8 @@
         }
       },
       "block_order": [
-        "message_VDKN9F",
         "message_mwKdCW",
+        "message_VDKN9F",
         "message_H8QGiC"
       ],
       "settings": {
