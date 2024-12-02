@@ -37,19 +37,6 @@
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
         },
-        "image_hNMQxN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/YW_Black_Friday_Product_Page_Banner.jpg",
-            "image_alignment": "left",
-            "full_width": true,
-            "image_width": 150,
-            "text": "",
-            "block_layout": "vertical",
-            "condition_field": "",
-            "condition_value": ""
-          }
-        },
         "related_products": {
           "type": "related_products",
           "settings": {
@@ -99,7 +86,7 @@
             "end_time": "11:59",
             "period": "pm",
             "hide_on_complete": true,
-            "text_size": 12,
+            "text_size": 12
           }
         }
       },
@@ -107,7 +94,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "image_hNMQxN",
         "related_products",
         "description_hJDVw4",
         "product_specification_KTwhqh",
