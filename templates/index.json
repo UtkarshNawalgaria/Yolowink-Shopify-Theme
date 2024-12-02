@@ -12,28 +12,8 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_EbF34z": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/YW-Black_Friday_Banner_1.webp",
-            "mobile_image": "shopify://shop_images/YW-Black_Friday_Mobile_Banner_1.webp",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify://collections/sunglasses",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "slide-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/yw_model_banner2.jpg",
             "mobile_image": "shopify://shop_images/yw_mobile_banner3.jpg",
@@ -53,7 +33,6 @@
         }
       },
       "block_order": [
-        "image_EbF34z",
         "slide-1"
       ],
       "settings": {
@@ -249,14 +228,6 @@
             "link": "shopify://collections/womens-sunglasses"
           }
         },
-        "custom_VjAbA3": {
-          "type": "custom",
-          "settings": {
-            "image": "shopify://shop_images/Male.webp",
-            "button_text": "shop for him",
-            "link": "shopify://collections/mens-sunglasses"
-          }
-        },
         "custom_aQ4acY": {
           "type": "custom",
           "settings": {
@@ -264,12 +235,20 @@
             "button_text": "Unisex",
             "link": "shopify://collections/unisex-sunglasses"
           }
+        },
+        "custom_VjAbA3": {
+          "type": "custom",
+          "settings": {
+            "image": "shopify://shop_images/Male.webp",
+            "button_text": "shop for him",
+            "link": "shopify://collections/mens-sunglasses"
+          }
         }
       },
       "block_order": [
         "custom_JThQxd",
         "custom_aQ4acY",
-        "custom_VjAbA3",
+        "custom_VjAbA3"
       ],
       "settings": {}
     },
