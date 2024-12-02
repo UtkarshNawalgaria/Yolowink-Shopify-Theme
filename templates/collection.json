@@ -35,6 +35,7 @@
       "block_order": [
         "image_Y6kiMf"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "auto",
         "transition_type": "fade",
