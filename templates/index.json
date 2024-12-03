@@ -328,6 +328,7 @@
       "blocks": {
         "image_XzJRj4": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3.png",
             "mobile_image": "shopify://shop_images/3_8afaf47e-9329-45de-b9e6-ff2224a73587.png",
@@ -347,10 +348,8 @@
         },
         "image_mXnbDn": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/YW-Collection_Page_Banner_1.webp",
-            "mobile_image": "shopify://shop_images/YW-Collection_Page_Mobile_Banner.webp",
+            "image": "shopify://shop_images/YW_Banner_1.2.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
