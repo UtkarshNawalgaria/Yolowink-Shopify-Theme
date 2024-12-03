@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/yw_model_banner2.jpg",
-            "mobile_image": "shopify://shop_images/yw_mobile_banner3.jpg",
+            "image": "shopify://shop_images/2.png",
+            "mobile_image": "shopify://shop_images/2_baea7d0f-484c-4cf6-bace-fcf80b997d62.png",
             "text_position": "bottom_center",
             "subheading": "",
             "title": "",
@@ -30,14 +30,55 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "image_6iMRJp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_c6148442-a669-476c-b1de-b70d826dc5f9.png",
+            "mobile_image": "shopify://shop_images/3_cb0c5e4c-1cef-4e14-a317-bd63dcaa64ef.png",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify://collections/sunglasses",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#e5e5e5",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_DkM7Xe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_6028c600-caa8-4afb-b1c5-4ed5120173a7.png",
+            "mobile_image": "shopify://shop_images/4_d823a94e-e99d-4484-ae56-6cc268373377.png",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify://collections/computer-glasses",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#e5e5e5",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
-        "slide-1"
+        "slide-1",
+        "image_6iMRJp",
+        "image_DkM7Xe"
       ],
       "settings": {
         "section_height": "small",
         "transition_type": "sweep",
+        "show_initial_transition": false,
         "autoplay": true,
         "cycle_speed": 7,
         "background": "rgba(0,0,0,0)"
@@ -332,6 +373,7 @@
       "settings": {
         "section_height": "auto",
         "transition_type": "sweep",
+        "show_initial_transition": false,
         "autoplay": true,
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
