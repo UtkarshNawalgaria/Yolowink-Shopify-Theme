@@ -32,7 +32,7 @@
 </style>
 
 <section class="section section--flush">
-  <slide-show reveal-on-scroll {% if section.settings.autoplay %}auto-play{% endif %} transition-type="{{ section.settings.transition_type | escape }}" class="slideshow slideshow--{{ section.settings.section_height }}">
+  <slide-show {% if section.settings.show_initial_transition %}reveal-on-scroll{% endif %} {% if section.settings.autoplay %}auto-play{% endif %} transition-type="{{ section.settings.transition_type | escape }}" class="slideshow slideshow--{{ section.settings.section_height }}">
     <div class="slideshow__slide-list">
       {%- for block in section.blocks -%}
         {%- comment -%}
@@ -63,7 +63,7 @@
         {%- endif -%}
 
         {%- capture slide_content -%}
-          <div class="slideshow__image-wrapper {% if mobile_image != blank %}hidden-pocket{% endif %}" {% if section.settings.transition_type == 'reveal' %}reveal-visibility{% endif %}>
+          <div class="slideshow__image-wrapper {% if mobile_image != blank %}hidden-pocket{% endif %}" {% if section.settings.transition_type == 'reveal' and section.settings.show_initial_transition or forloop.first == false %}reveal-visibility{% endif %}>
             {%- if image != blank -%}
               {%- capture sizes_attributes -%}{% if split_image != blank %}(min-width: 1000px) 50vw{% else %}100vw{% endif %}{%- endcapture -%}
               {{- image | image_url: width: 3000 | image_tag: loading: loading_attribute_value, draggable: false, class: 'slideshow__image', sizes: sizes_attributes, widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000' -}}
@@ -75,13 +75,13 @@
 
           {%- comment -%}If a second image (split image) is uploaded, we use it. Note that we use the same ratio as the first image (to have equal column height){% endcomment %}
           {%- if image != blank and split_image != blank -%}
-            <div class="slideshow__image-wrapper slideshow__image-wrapper--secondary hidden-pocket" {% if section.settings.transition_type == 'reveal' %}reveal-visibility{% endif %}>
+            <div class="slideshow__image-wrapper slideshow__image-wrapper--secondary hidden-pocket" {% if section.settings.transition_type == 'reveal' and section.settings.show_initial_transition or forloop.first == false %}reveal-visibility{% endif %}>
               {{- split_image | image_url: width: 3000 | image_tag: loading: loading_attribute_value, draggable: false, class: 'slideshow__image', sizes: '50vw', widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000' -}}
             </div>
           {%- endif -%}
 
           {%- if mobile_image != blank -%}
-            <div class="slideshow__image-wrapper hidden-lap-and-up" {% if section.settings.transition_type == 'reveal' %}reveal-visibility{% endif %}>
+            <div class="slideshow__image-wrapper hidden-lap-and-up" {% if section.settings.transition_type == 'reveal' and section.settings.show_initial_transition or forloop.first == false %}reveal-visibility{% endif %}>
               {{- mobile_image | image_url: width: 3000 | image_tag: loading: loading_attribute_value, draggable: false, class: 'slideshow__image', sizes: '100vw', widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000' -}}
             </div>
           {%- endif -%}
@@ -95,13 +95,13 @@
           {%- capture section_content -%}
             {%- if block.settings.subheading != blank -%}
               <h2 class="heading heading--small">
-                <split-lines {% if section.settings.transition_type != 'fade' %}reveal{% endif %}>{{ block.settings.subheading | escape }}</split-lines>
+                <split-lines {% if section.settings.transition_type != 'fade' and section.settings.show_initial_transition or forloop.first == false %}reveal{% endif %}>{{ block.settings.subheading | escape }}</split-lines>
               </h2>
             {%- endif -%}
 
             {%- if block.settings.title != blank -%}
               <h3 class="heading heading--large">
-                <split-lines {% if section.settings.transition_type != 'fade' %}reveal{% endif %}>{{ block.settings.title | escape }}</split-lines>
+                <split-lines {% if section.settings.transition_type != 'fade' and section.settings.show_initial_transition or forloop.first == false %}reveal{% endif %}>{{ block.settings.title | escape }}</split-lines>
               </h3>
             {%- endif -%}
 
@@ -116,13 +116,13 @@
             {%- endcapture -%}
 
             {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
-              <div class="button-group" {% if section.settings.transition_type != 'fade' %}reveal{% endif %}>
+              <div class="button-group" {% if section.settings.transition_type != 'fade' and section.settings.show_initial_transition or forloop.first == false %}reveal{% endif %}>
                 <div class="button-group__wrapper">
                   {{- buttons -}}
                 </div>
               </div>
             {%- elsif buttons != blank -%}
-              <div class="button-wrapper" {% if section.settings.transition_type != 'fade' %}reveal{% endif %}>
+              <div class="button-wrapper" {% if section.settings.transition_type != 'fade' and section.settings.show_initial_transition or forloop.first == false %}reveal{% endif %}>
                 {{- buttons -}}
               </div>
             {%- endif -%}
@@ -154,7 +154,7 @@
           {% endif %}
         {%- endcapture -%}
 
-        <slide-show-item {% if section.settings.transition_type != 'reveal' %}reveal-visibility{% endif %} {{ slide_attributes }}>
+        <slide-show-item {% if section.settings.transition_type != 'reveal' and section.settings.show_initial_transition or forloop.first == false %}reveal-visibility{% endif %} {{ slide_attributes }}>
           {%- if block.settings.button_1_link != blank and block.settings.button_1_text == blank and block.settings.button_2_text == blank -%}
             <a class="slideshow__slide-inner" href="{{ block.settings.button_1_link }}">
               {{- slide_content -}}
@@ -237,6 +237,12 @@
         }
       ],
       "default": "sweep"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_initial_transition",
+      "label": "Show initial transition",
+      "default": false
     },
     {
       "type": "checkbox",
