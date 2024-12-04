@@ -84,6 +84,66 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "collection_list_aT9BQB": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_ccHaVW": {
+          "type": "collection",
+          "settings": {
+            "collection": "sunglasses-under-rs-1000",
+            "image": "shopify://shop_images/1_363371bf-0777-4616-9687-a529595aff9c.png",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 12
+          }
+        },
+        "collection_HxU6Lb": {
+          "type": "collection",
+          "settings": {
+            "collection": "sunglasses-under-rs-2000",
+            "image": "shopify://shop_images/2_e6c4b89b-69b6-4cc6-bd39-d5e145209b11.png",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_UeH4PF": {
+          "type": "collection",
+          "settings": {
+            "collection": "sunglasses-under-rs-3000",
+            "image": "shopify://shop_images/3_bad40ec8-a71e-4f23-9ef9-87fd2bf64c5b.png",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_ccHaVW",
+        "collection_HxU6Lb",
+        "collection_UeH4PF"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "grid",
+        "subheading": "High quality sunglasses available at affordable prices",
+        "title": "Shop By Price",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "featured_collections_wiQjwi": {
       "type": "featured-collections",
       "blocks": {
@@ -196,66 +256,6 @@
         "show_video_controls": false,
         "loop_video": false,
         "full_width": false
-      }
-    },
-    "collection_list_aT9BQB": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_ccHaVW": {
-          "type": "collection",
-          "settings": {
-            "collection": "sunglasses-under-rs-1000",
-            "image": "shopify://shop_images/1_363371bf-0777-4616-9687-a529595aff9c.png",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 12
-          }
-        },
-        "collection_HxU6Lb": {
-          "type": "collection",
-          "settings": {
-            "collection": "sunglasses-under-rs-2000",
-            "image": "shopify://shop_images/2_e6c4b89b-69b6-4cc6-bd39-d5e145209b11.png",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_UeH4PF": {
-          "type": "collection",
-          "settings": {
-            "collection": "sunglasses-under-rs-3000",
-            "image": "shopify://shop_images/3_bad40ec8-a71e-4f23-9ef9-87fd2bf64c5b.png",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_ccHaVW",
-        "collection_HxU6Lb",
-        "collection_UeH4PF"
-      ],
-      "settings": {
-        "reveal_on_scroll": false,
-        "layout": "grid",
-        "subheading": "High quality sunglasses available at affordable prices",
-        "title": "Shop Our Range",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
       }
     },
     "split_images_YkRXMG": {
@@ -434,9 +434,9 @@
   },
   "order": [
     "slideshow",
+    "collection_list_aT9BQB",
     "featured_collections_wiQjwi",
     "video_carousel_i7zTzM",
-    "collection_list_aT9BQB",
     "split_images_YkRXMG",
     "featured_collections_rFPjFR",
     "slideshow_jzP87j",
