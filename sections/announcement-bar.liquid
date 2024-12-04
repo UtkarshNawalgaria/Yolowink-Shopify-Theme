@@ -47,6 +47,15 @@
         z-index: unset;
       {%- endif -%}
     }
+
+    {% if section.settings.layout == "scrolling" %}
+      .announcement-bar__list {
+        animation-duration: 20s;
+      }
+      .announcement-bar__item {
+        min-width: auto;
+      }
+    {% endif %}
   }
 </style>
 
