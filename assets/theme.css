@@ -8895,6 +8895,7 @@ input:checked
   padding-inline-start: 20px;
   padding-inline-end: 20px;
   display: flex;
+  overflow: hidden;
 }
 
 .announcement-bar--multiple {
@@ -18871,5 +18872,14 @@ video-carousel .nav-btns {
   .countdown__timer .heading {
     font-size: 24px;
     font-weight: normal;
+  }
+}
+
+@keyframes announcement-bar-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move left by 100% of the container width */
   }
 }

@@ -1,0 +1,90 @@
+{%- assign has_extra_content = false -%}
+
+{%- if block.settings.content != blank or block.settings.image != blank -%}
+  {%- assign has_extra_content = true -%}
+{%- endif -%}
+
+<announcement-bar-item
+  {% if has_extra_content %}
+    has-content
+  {% endif %}
+  {% if forloop.index != 1 and section.settings.layout == 'slider' %}
+    hidden
+  {% endif %}
+  class="announcement-bar__item"
+  {{ block.shopify_attributes }}
+>
+  {%- case section.settings.announcement_text_size -%}
+    {%- when 'small' -%}
+      {%- assign text_size_class = 'text--xsmall' -%}
+    {%- when 'normal' -%}
+      {%- assign text_size_class = 'text--small' -%}
+    {%- when 'large' -%}
+      {%- assign text_size_class = '' -%}
+  {%- endcase -%}
+
+  <div class="announcement-bar__message {{ text_size_class }}">
+    {%- if block.settings.content != blank or block.settings.image != blank -%}
+      {%- if block.settings.learn_more_text != blank -%}
+        <p>
+          {{ block.settings.text | escape }}
+          <button class="link" data-action="open-content">{{ block.settings.learn_more_text | escape }}</button>
+        </p>
+      {%- else -%}
+        <button class="link" data-action="open-content">{{ block.settings.text | escape }}</button>
+      {%- endif -%}
+    {%- else -%}
+      <p>{{ block.settings.text | escape }}</p>
+    {%- endif -%}
+  </div>
+
+  {%- if block.settings.content != blank or block.settings.image != blank -%}
+    <div hidden class="announcement-bar__content {% if block.settings.image != blank %}has-image{% endif %}">
+      <div class="announcement-bar__content-overlay"></div>
+
+      <div class="announcement-bar__content-overflow">
+        <div class="announcement-bar__content-inner">
+          <button type="button" class="announcement-bar__close-button tap-area" data-action="close-content">
+            <span class="visually-hidden">{{ 'general.accessibility.close' | t }}</span>
+            {%- render 'icon' with 'close' -%}
+          </button>
+
+          {%- if block.settings.image != blank -%}
+            {%- capture sizes_attribute -%}{% if block.settings.content != blank %}50vw{% else %}100vw{% endif %}{%- endcapture -%}
+            {{-
+              block.settings.image
+              | image_url: width: block.settings.image.width
+              | image_tag:
+                loading: 'lazy',
+                sizes: sizes_attribute,
+                widths: '400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000',
+                class: 'announcement-bar__content-image'
+            -}}
+          {%- endif -%}
+
+          {%- if block.settings.content != blank -%}
+            <div class="announcement-bar__content-text-wrapper">
+              <div class="announcement-bar__content-text text-container">
+                {%- if block.settings.title != blank -%}
+                  <h3 class="heading h5">{{ block.settings.title | escape }}</h3>
+                {%- endif -%}
+
+                {%- if block.settings.content != blank -%}
+                  {{- block.settings.content -}}
+                {%- endif -%}
+
+                {%- if block.settings.button_text != blank -%}
+                  <div class="button-wrapper">
+                    <a href="{{ block.settings.button_link }}" class="button button--primary">
+                      {{- block.settings.button_text | escape -}}
+                    </a>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+</announcement-bar-item>

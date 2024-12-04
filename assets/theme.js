@@ -3206,6 +3206,7 @@ var AnnouncementBar = class extends CustomHTMLElement {
   async connectedCallback() {
     await customElements.whenDefined("announcement-bar-item");
     this.items = Array.from(this.querySelectorAll("announcement-bar-item"));
+    this.layout = this.querySelector("[data-layout]");
     this.hasPendingTransition = false;
     this.delegate.on("click", '[data-action="prev"]', this.previous.bind(this));
     this.delegate.on("click", '[data-action="next"]', this.next.bind(this));
@@ -3217,7 +3218,7 @@ var AnnouncementBar = class extends CustomHTMLElement {
       this.resizeObserver = new ResizeObserver(this._updateCustomProperties.bind(this));
       this.resizeObserver.observe(this);
     }
-    if (this.autoPlay) {
+    if (this.autoPlay && this.layout == "slider") {
       this._startPlayer();
     }
     if (Shopify.designMode) {
