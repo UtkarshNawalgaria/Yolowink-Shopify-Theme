@@ -31,6 +31,10 @@
     }
   {% endif %}
 
+  .announcement-bar__list:hover {
+    animation-play-state: paused;
+  }
+
   @media screen and (min-width: 741px) {
     :root {
       --enable-sticky-announcement-bar: {% if section.settings.announcement_bar_position == 'non_sticky' or section.settings.announcement_bar_position == 'sticky_mobile' %}0{% else %}1{% endif %};

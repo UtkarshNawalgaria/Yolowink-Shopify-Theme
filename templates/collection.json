@@ -15,8 +15,8 @@
         "image_Y6kiMf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/YW-Collection_Page_Banner_1.webp",
-            "mobile_image": "shopify://shop_images/YW-Collection_Page_Mobile_Banner.webp",
+            "image": "shopify://shop_images/YW_Banner_1.2.jpg",
+            "mobile_image": "shopify://shop_images/YW_Banner_1_Mobile_Version.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -35,13 +35,9 @@
       "block_order": [
         "image_Y6kiMf"
       ],
-      "disabled": true,
+      "disabled": false,
       "settings": {
         "section_height": "auto",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
       }
     },
     "collection-banner": {
