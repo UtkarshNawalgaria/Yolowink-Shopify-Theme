@@ -2872,6 +2872,7 @@ p + .button-group,
 
 .price--highlight {
   color: rgb(var(--product-on-sale-accent));
+  font-weight: 600;
 }
 
 .price--compare {
@@ -2880,7 +2881,7 @@ p + .button-group,
 }
 
 .price--large {
-  font-size: var(--base-font-size);
+  font-size: calc(var(--base-font-size) + 4px);
   color: rgb(var(--secondary-button-background));
 }
 
@@ -2890,7 +2891,12 @@ p + .button-group,
 
 @media screen and (min-width: 1000px) {
   .price--large:not(.price--compare) {
-    font-size: calc(var(--base-font-size) + 3px);
+    font-size: calc(var(--base-font-size) + 8px);
+    font-weight: 600;
+  }
+
+  .price--highlight {
+    font-size: 18px;
   }
 }
 

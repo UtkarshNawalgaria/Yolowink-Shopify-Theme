@@ -173,6 +173,16 @@
           {%- render 'icon' with 'image-zoom' -%}
         </button>
       {%- endif -%}
+
+      {%- if settings.show_discount and product.available and product.price < product.compare_at_price -%}
+        {%- if settings.discount_mode == 'percentage' -%}
+          {%- assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round | append: '%' -%}
+        {%- else -%}
+          {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+        {%- endif -%}
+
+        <span class="label label--highlight" style="position: absolute; top: 20px; left: 40px;">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+      {%- endif -%}
     </div>
 
     {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
