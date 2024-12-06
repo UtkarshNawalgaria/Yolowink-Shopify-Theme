@@ -18889,3 +18889,46 @@ video-carousel .nav-btns {
     transform: translateX(-100%); /* Move left by 100% of the container width */
   }
 }
+
+.quantity-selector_low-inventory {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.low-inventory {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.low-inventory p {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+/* Pulsating circle */
+.pulsating-circle {
+  width: 10px; /* Circle size */
+  height: 10px;
+  background-color: rgb(var(--product-on-sale-accent)); /* Circle color */
+  border-radius: 50%; /* Make it circular */
+  box-shadow: 0 0 15px rgba(var(--product-on-sale-accent),0.9); /* Glow effect */
+  animation: pulse 1.5s infinite; /* Pulsating animation */
+}
+
+/* Keyframe animation for pulsating effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5); /* Grow the circle */
+    opacity: 0.8; /* Fade out slightly */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1; /* Return to original size and opacity */
+  }
+}

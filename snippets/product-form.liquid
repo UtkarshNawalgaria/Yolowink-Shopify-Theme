@@ -2,6 +2,7 @@
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
+{% assign current_variant = product.selected_or_first_available_variant %}
 
 <div class="product-form">
   {%- for block in section.blocks -%}
@@ -304,19 +305,25 @@
           <div class="product-form__quantity" {{ block.shopify_attributes }}>
             <span class="product-form__quantity-label">{{ 'product.form.quantity' | t }}:</span>
 
-            <quantity-selector class="quantity-selector">
-              <button type="button" class="quantity-selector__button">
-                <span class="visually-hidden">{{ 'cart.general.decrease_quantity' | t }}</span>
-                {%- render 'icon' with 'minus-big' -%}
-              </button>
-
-              <input type="text" form="{{ product_form_id }}" is="input-number" class="quantity-selector__input" inputmode="numeric" name="quantity" autocomplete="off" min="1" value="1" size="2" aria-label="{{ 'product.form.quantity' | t | escape }}">
-
-              <button type="button" class="quantity-selector__button">
-                <span class="visually-hidden">{{ 'cart.general.increase_quantity' | t }}</span>
-                {%- render 'icon' with 'plus-big' -%}
-              </button>
-            </quantity-selector>
+            <div class="quantity-selector_low-inventory">
+              <quantity-selector class="quantity-selector">
+                <button type="button" class="quantity-selector__button">
+                  <span class="visually-hidden">{{ 'cart.general.decrease_quantity' | t }}</span>
+                  {%- render 'icon' with 'minus-big' -%}
+                </button>
+                <input type="text" form="{{ product_form_id }}" is="input-number" class="quantity-selector__input" inputmode="numeric" name="quantity" autocomplete="off" min="1" value="1" size="2" aria-label="{{ 'product.form.quantity' | t | escape }}">
+                <button type="button" class="quantity-selector__button">
+                  <span class="visually-hidden">{{ 'cart.general.increase_quantity' | t }}</span>
+                  {%- render 'icon' with 'plus-big' -%}
+                </button>
+              </quantity-selector>
+              {% if current_variant.inventory_quantity <= 15 %}
+                <div class="low-inventory">
+                  <div class="pulsating-circle"></div>
+                  <p>Only {{ current_variant.inventory_quantity }} Left</p>
+                </div>
+              {% endif %}
+            </div>
           </div>
         {%- endif -%}
 
