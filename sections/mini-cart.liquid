@@ -326,16 +326,26 @@
     <footer class="mini-cart__drawer-footer drawer__footer drawer__footer--tight drawer__footer--bordered">
       {%- capture shipping_tax_note -%}{{ 'cart.general.shipping_tax_note' | t }}{%- endcapture -%}
 
-      {%- if cart.cart_level_discount_applications != blank -%}
-        <ul class="mini-cart__discount-list list--unstyled" role="list">
-          {%- for discount_application in cart.cart_level_discount_applications -%}
-            <li class="mini-cart__discount">
-              <span class="mini-cart__discount-badge discount-badge">{%- render 'icon' with 'discount-badge' -%}{{ discount_application.title }}</span>
-              <span class="mini-cart__discount-price text--xsmall text--subdued">-{{ discount_application.total_allocated_amount | money }}</span>
-            </li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
+      <div style="display: flex; flex-direction: column; gap: 5px;">
+        <div class="cart__total-container sub-total">
+          <span class="heading">{{ 'cart.general.sub_total' | t }}</span>
+          <span class="heading">{{ cart.items_subtotal_price | money_with_currency }}</span>
+        </div>
+        {%- if cart.cart_level_discount_applications != blank -%}
+          <ul class="cart__discount-list list--unstyled" role="list">
+            {%- for discount_application in cart.cart_level_discount_applications -%}
+              <li class="cart__discount">
+                <span class="cart__discount-badge discount-badge">{%- render 'icon' with 'discount-badge' -%}{{ discount_application.title }}</span>
+                <span class="cart__discount-price">-{{ discount_application.total_allocated_amount | money }}</span>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        <div class="cart__total-container total">
+          <span class="heading h6">{{ 'cart.general.total' | t }}</span>
+          <span class="heading h6">{{ cart.total_price | money_with_currency }}</span>
+        </div>
+      </div>
 
       {%- if section.settings.show_order_note or shipping_tax_note != '' -%}
         <div class="mini-cart__actions text--subdued text--xsmall">

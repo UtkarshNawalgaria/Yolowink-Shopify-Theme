@@ -11104,6 +11104,10 @@ input:checked
   display: flex;
 }
 
+.cart__total-container.sub-total span {
+  font-weight: 500;
+}
+
 .cart__discount-list {
   gap: 10px;
   display: grid;

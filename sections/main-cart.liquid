@@ -334,11 +334,10 @@
                   {%- case block.type -%}
                     {%- when 'totals' -%}
                       <div class="cart__recap-block" {{ block.shopify_attributes }}>
-                        <div class="cart__total-container">
-                          <span class="heading h6">{{ 'cart.general.total' | t }}</span>
-                          <span class="heading h6">{{ cart.total_price | money_with_currency }}</span>
+                        <div class="cart__total-container sub-total">
+                          <span class="heading">{{ 'cart.general.sub_total' | t }}</span>
+                          <span class="heading">{{ cart.items_subtotal_price | money_with_currency }}</span>
                         </div>
-
                         {%- if cart.cart_level_discount_applications != blank -%}
                           <ul class="cart__discount-list list--unstyled" role="list">
                             {%- for discount_application in cart.cart_level_discount_applications -%}
@@ -349,6 +348,11 @@
                             {%- endfor -%}
                           </ul>
                         {%- endif -%}
+                        <div class="cart__total-container total">
+                          <span class="heading h6">{{ 'cart.general.total' | t }}</span>
+                          <span class="heading h6">{{ cart.total_price | money_with_currency }}</span>
+                        </div>
+
 
                         {%- capture shipping_tax_note -%}{{ 'cart.general.shipping_tax_note' | t }}{%- endcapture -%}
 
@@ -392,7 +396,7 @@
 
                 <button type="submit" class="cart__checkout-button checkout-button button button--primary button--full" name="checkout">
                   <span class="checkout-button__lock">{%- render 'icon' with 'lock' -%}</span>
-                  {{- 'cart.general.checkout' | t -}}
+                  <span>{{- 'cart.general.checkout' | t -}}</span>
                 </button>
               </form>
 

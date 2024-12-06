@@ -5498,7 +5498,7 @@ var ProductForm = class extends HTMLFormElement {
           bubbles: true,
           detail: {
             cart: cartContent,
-            openMiniCart: window.themeVariables.settings.cartType === "drawer" && this.closest(".drawer") === null
+            openMiniCart: true
           }
         }));
       });
