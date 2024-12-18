@@ -17,18 +17,7 @@
         "message_mwKdCW": {
           "type": "message",
           "settings": {
-            "text": "Buy 1 Get 10%",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "message_mwKdCs": {
-          "type": "message",
-          "settings": {
-            "text": "Buy 2 Get 20% off",
+            "text": "Buy 1 Get 10% | Buy 2 Get 20%",
             "learn_more_text": "Learn more",
             "title": "",
             "content": "",
@@ -39,7 +28,7 @@
         "message_izpKKE": {
           "type": "message",
           "settings": {
-            "text": "Buy any 2 in Rs 2000",
+            "text": "End of Year Sale | Buy any 2 in Rs 2000",
             "learn_more_text": "Learn more",
             "title": "",
             "content": "",
@@ -72,7 +61,6 @@
       },
       "block_order": [
         "message_mwKdCW",
-        "message_mwKdCs",
         "message_izpKKE",
         "message_VDKN9F",
         "message_H8QGiC"
