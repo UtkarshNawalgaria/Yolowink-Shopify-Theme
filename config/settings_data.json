@@ -75,11 +75,6 @@
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
-      },
-      "9468172321995857178": {
-        "type": "shopify://apps/q-discount-free-gift/blocks/app-embed/2e94b962-8172-4839-8ad9-7837eb8b017a",
-        "disabled": false,
-        "settings": {}
       }
     }
   },

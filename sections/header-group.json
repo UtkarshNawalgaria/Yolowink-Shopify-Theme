@@ -36,6 +36,17 @@
             "button_link": ""
           }
         },
+        "message_izpKKE": {
+          "type": "message",
+          "settings": {
+            "text": "Buy any 2 in Rs 2000",
+            "learn_more_text": "Learn more",
+            "title": "",
+            "content": "",
+            "button_text": "ewfre",
+            "button_link": "shopify://collections/get-2-at-rs-2000"
+          }
+        },
         "message_VDKN9F": {
           "type": "message",
           "settings": {
@@ -62,11 +73,13 @@
       "block_order": [
         "message_mwKdCW",
         "message_mwKdCs",
+        "message_izpKKE",
         "message_VDKN9F",
         "message_H8QGiC"
       ],
       "settings": {
         "announcement_bar_position": "non_sticky",
+        "layout": "scrolling",
         "announcement_text_size": "small",
         "autoplay": true,
         "cycle_speed": 3,
