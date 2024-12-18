@@ -77,44 +77,18 @@
             "condition_field": "lens_type",
             "condition_value": "Polarized"
           }
-        },
-        "countdown_timer_QcHHVW": {
-          "type": "countdown-timer",
-          "settings": {
-            "heading": "BLACK FRIDAY SALE ends in",
-            "end_date": "2024-12-02",
-            "end_time": "11:59",
-            "period": "pm",
-            "hide_on_complete": true,
-            "text_size": 12
-          }
-        },
-        "image_MBbER6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/YW_Banner_1_600x100_3f0ef98b-3571-4d55-b424-e1bbc7e241d1.jpg",
-            "image_alignment": "left",
-            "full_width": true,
-            "image_width": 150,
-            "text": "",
-            "block_layout": "vertical",
-            "condition_field": "",
-            "condition_value": ""
-          }
         }
       },
       "block_order": [
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "image_MBbER6",
         "related_products",
         "description_hJDVw4",
         "product_specification_KTwhqh",
         "package_information",
         "image_list_HwjFJH",
-        "image_8dpqDB",
-        "countdown_timer_QcHHVW"
+        "image_8dpqDB"
       ],
       "settings": {
         "show_vendor": false,
