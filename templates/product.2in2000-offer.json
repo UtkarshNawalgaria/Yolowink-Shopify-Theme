@@ -1,0 +1,268 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "none",
+            "variant_image_options": "Lens Color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "related_products": {
+          "type": "related_products",
+          "settings": {
+            "heading": "Color"
+          }
+        },
+        "description_hJDVw4": {
+          "type": "description",
+          "settings": {}
+        },
+        "product_specification_KTwhqh": {
+          "type": "product_specification",
+          "settings": {
+            "heading": "Product Specification",
+            "field_list": "Frame Type,Frame Shape,Frame Material,Lens Type,Lens Color"
+          }
+        },
+        "package_information": {
+          "type": "package-information",
+          "settings": {}
+        },
+        "image_list_HwjFJH": {
+          "type": "image-list",
+          "settings": {
+            "image1": "shopify://shop_images/Yolowink_UV_Protection.jpg",
+            "image2": "shopify://shop_images/Yolowink_Reduces_Glare.jpg"
+          }
+        },
+        "image_8dpqDB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Yolowink_Polarized.jpg",
+            "image_alignment": "center",
+            "full_width": true,
+            "image_width": 150,
+            "text": "",
+            "block_layout": "vertical",
+            "condition_field": "lens_type",
+            "condition_value": "Polarized"
+          }
+        },
+        "countdown_timer_QcHHVW": {
+          "type": "countdown-timer",
+          "settings": {
+            "heading": "BLACK FRIDAY SALE ends in",
+            "end_date": "2024-12-02",
+            "end_time": "11:59",
+            "period": "pm",
+            "hide_on_complete": true,
+            "text_size": 12
+          }
+        },
+        "image_MBbER6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/YW_Banner_1_600x100_3f0ef98b-3571-4d55-b424-e1bbc7e241d1.jpg",
+            "image_alignment": "left",
+            "full_width": true,
+            "image_width": 150,
+            "text": "",
+            "block_layout": "vertical",
+            "condition_field": "",
+            "condition_value": ""
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "image_MBbER6",
+        "related_products",
+        "description_hJDVw4",
+        "product_specification_KTwhqh",
+        "package_information",
+        "image_list_HwjFJH",
+        "image_8dpqDB",
+        "countdown_timer_QcHHVW"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": true,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "content_88TN6f": {
+          "type": "content",
+          "settings": {
+            "title": "Exchange & Return",
+            "content": "<ul><li>Returns are not applicable on discounted products</li><li>Shop worry-free with our 1-year warranty on all frames*</li><li>Click <a href=\"/policies/terms-of-service\" title=\"Terms of Service\">here</a> for FAQs, terms & conditions on all policies</li></ul>",
+            "page": ""
+          }
+        },
+        "content_fQt3DB": {
+          "type": "content",
+          "settings": {
+            "title": "About Our Lenses",
+            "content": "<ul><li>In-built UV protection for bright conditions.</li><li>Reduced glare reduction for vision clarity.</li><li>Enhanced visual comfort and reduces eye-strain.</li></ul><p></p>",
+            "page": ""
+          }
+        },
+        "complementary_products_97MxCf": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Featured products"
+          }
+        },
+        "liquid_rrzchn": {
+          "type": "liquid",
+          "settings": {
+            "title": "More Info",
+            "liquid": "<p><strong>Net Content per Product</strong> - 1N</p>\n<p><strong>Style Number</strong> - {{ product.selected_or_first_available_variant.sku }}</p>\n<p><strong>MRP:</strong> {{ product.selected_or_first_available_variant.price | money }} (Inclusive of all Taxes)</p>\n<p><strong>Packed and Marketed by:</strong>\nKDM Eyewear LLP - S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.\n<p><strong>Country of origin:</strong> India</p>\n<p><strong>Contact Support Executive incase of complaint: </strong>Jesal Panchal</p>\n<p><strong>Consumer Care Number: </strong>+91 9594934422</p>\n<p><strong>Consumer Care Email:</strong> support@yolowink.com</p>\n<p><strong>Consumer Care Address:</strong> KDM Eyewear LLP - S-1/302, Udyog Nagar CHS LTD, Dahanukarwadi, Mahavir Nagar, Near Jain Mandir, Kandivali West, Mumbai- 400067, Maharashtra, India.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_88TN6f",
+        "content_fQt3DB",
+        "complementary_products_97MxCf",
+        "liquid_rrzchn"
+      ],
+      "settings": {}
+    },
+    "171965092025a457bb": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_4LTd8f": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_4LTd8f"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "You may also like",
+        "recommendations_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "recently_viewed_products_wfyUgg": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "subheading": "",
+        "title": "Recently viewed",
+        "products_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "gallery_PgQAbr": {
+      "type": "gallery",
+      "blocks": {
+        "image_AXagaM": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.product_custom.product_gallery.value }}",
+            "caption": ""
+          }
+        },
+        "image_afRKwc": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_gallery_img_4.value }}",
+            "caption": ""
+          }
+        },
+        "image_mctryg": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_gallery_img_3.value }}",
+            "caption": ""
+          }
+        },
+        "image_WkniB4": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_gallery_img_4.value }}",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_AXagaM",
+        "image_afRKwc",
+        "image_mctryg",
+        "image_WkniB4"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-content",
+    "171965092025a457bb",
+    "product-recommendations",
+    "recently_viewed_products_wfyUgg",
+    "gallery_PgQAbr"
+  ]
+}
