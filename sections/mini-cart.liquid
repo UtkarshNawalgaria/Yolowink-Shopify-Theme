@@ -366,7 +366,15 @@
       {%- endif -%}
 
       {%- if section.settings.show_checkout_button -%}
-        <button form="mini-cart-form" type="submit" class="checkout-button button button--primary button--full" name="checkout">
+        <!-- <button form="mini-cart-form" type="submit" class="checkout-button button button--primary button--full" name="checkout">
+          <span class="checkout-button__lock">{%- render 'icon' with 'lock' -%}</span>
+
+          {{- 'cart.general.checkout' | t -}}
+          <span class="square-separator"></span>
+          {{- cart.total_price | money_with_currency -}}
+        </button> -->
+
+          <button form="mini-cart-form" type="submit" id="checkout2" onclick="handleFloCheckoutBtn()" class="checkout-button button button--primary button--full" name="checkout2">
           <span class="checkout-button__lock">{%- render 'icon' with 'lock' -%}</span>
 
           {{- 'cart.general.checkout' | t -}}
