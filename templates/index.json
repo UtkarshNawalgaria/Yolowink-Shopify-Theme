@@ -84,6 +84,60 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "video_carousel_i7zTzM": {
+      "type": "video-carousel",
+      "blocks": {
+        "video_TPENFF": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/1.mp4",
+            "product": "meolooks-metal-black-cat-eye-clip-on-glasses-yw81033-c-4"
+          }
+        },
+        "video_QBDBdP": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/2.mp4",
+            "product": "paviora-tr-metal-maroon-aviator-sunglasses-yw22001-c-1"
+          }
+        },
+        "video_CrhUdC": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/1_eed5e3ea-27f1-48db-a8b7-f4048d828338.mp4",
+            "product": "avings-metal-black-aviator-clip-on-glasses-for-men-yw81029-c-3"
+          }
+        },
+        "video_yxrkab": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/3.mp4",
+            "product": "ovalvibe-brown-metal-oval-sunglasses-for-women-yw8101-c-2"
+          }
+        },
+        "video_a473ep": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/4.mp4",
+            "product": "hexchic-unisex-metal-brown-hexagon-sunglasses-yw61003-c-1"
+          }
+        }
+      },
+      "block_order": [
+        "video_TPENFF",
+        "video_QBDBdP",
+        "video_CrhUdC",
+        "video_yxrkab",
+        "video_a473ep"
+      ],
+      "settings": {
+        "heading": "Live Life in Full Wink",
+        "autoplay": true,
+        "show_video_controls": false,
+        "loop_video": false,
+        "full_width": false
+      }
+    },
     "collection_list_aT9BQB": {
       "type": "collection-list",
       "blocks": {
@@ -142,60 +196,6 @@
         "title": "Shop By Price",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "video_carousel_i7zTzM": {
-      "type": "video-carousel",
-      "blocks": {
-        "video_TPENFF": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/1.mp4",
-            "product": "meolooks-metal-black-cat-eye-clip-on-glasses-yw81033-c-4"
-          }
-        },
-        "video_QBDBdP": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/2.mp4",
-            "product": "paviora-tr-metal-maroon-aviator-sunglasses-yw22001-c-1"
-          }
-        },
-        "video_CrhUdC": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/1_eed5e3ea-27f1-48db-a8b7-f4048d828338.mp4",
-            "product": "avings-metal-black-aviator-clip-on-glasses-for-men-yw81029-c-3"
-          }
-        },
-        "video_yxrkab": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/3.mp4",
-            "product": "ovalvibe-brown-metal-oval-sunglasses-for-women-yw8101-c-2"
-          }
-        },
-        "video_a473ep": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/4.mp4",
-            "product": "hexchic-unisex-metal-brown-hexagon-sunglasses-yw61003-c-1"
-          }
-        }
-      },
-      "block_order": [
-        "video_TPENFF",
-        "video_QBDBdP",
-        "video_CrhUdC",
-        "video_yxrkab",
-        "video_a473ep"
-      ],
-      "settings": {
-        "heading": "Live Life in Full Wink",
-        "autoplay": true,
-        "show_video_controls": false,
-        "loop_video": false,
-        "full_width": false
       }
     },
     "featured_collections_wiQjwi": {
@@ -419,6 +419,7 @@
             "title_size": 32,
             "alignment": "center",
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
@@ -434,10 +435,10 @@
   },
   "order": [
     "slideshow",
-    "collection_list_aT9BQB",
     "video_carousel_i7zTzM",
-    "featured_collections_wiQjwi",
     "split_images_YkRXMG",
+    "featured_collections_wiQjwi",
+    "collection_list_aT9BQB",
     "featured_collections_rFPjFR",
     "slideshow_jzP87j",
     "featured-collections",
