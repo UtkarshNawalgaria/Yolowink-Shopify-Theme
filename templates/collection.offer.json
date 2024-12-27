@@ -46,6 +46,7 @@
     },
     "collection-banner": {
       "type": "collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_image": false,
         "show_collection_title": true,
