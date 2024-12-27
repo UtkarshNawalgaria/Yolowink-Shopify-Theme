@@ -374,13 +374,13 @@
           {{- cart.total_price | money_with_currency -}}
         </button> -->
 
-          <button form="mini-cart-form" type="submit" id="checkout2" onclick="handleFloCheckoutBtn()" class="checkout-button button button--primary button--full" name="checkout2">
+          <div form="mini-cart-form" type="submit" id="checkout2" onclick="handleFloCheckoutBtn()" class="checkout-button button button--primary button--full" name="checkout2">
           <span class="checkout-button__lock">{%- render 'icon' with 'lock' -%}</span>
 
           {{- 'cart.general.checkout' | t -}}
           <span class="square-separator"></span>
           {{- cart.total_price | money_with_currency -}}
-        </button>
+        </div>
       {%- else -%}
         <a href="{{ routes.cart_url }}" class="button button--primary button--full" data-no-instant>{{ 'cart.general.go_to_cart' | t }}</a>
       {%- endif -%}
