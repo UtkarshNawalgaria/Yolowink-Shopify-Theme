@@ -399,10 +399,10 @@
                   <span>{{- 'cart.general.checkout' | t -}}</span>
                 </button> -->
 
-                <button type="submit" id="checkout2" onclick="handleFloCheckoutBtn()" class="cart__checkout-button checkout-button button button--primary button--full" name="checkout2">
+                <div type="submit" id="checkout2" onclick="handleFloCheckoutBtn()" class="cart__checkout-button checkout-button button button--primary button--full" name="checkout2">
                   <span class="checkout-button__lock">{%- render 'icon' with 'lock' -%}</span>
                   <span>{{- 'cart.general.checkout' | t -}}</span>
-                </button>
+                </div>
               </form>
 
               {%- if section.settings.show_payment_methods and shop.enabled_payment_types.size > 0 -%}
