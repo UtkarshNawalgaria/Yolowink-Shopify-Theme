@@ -17,10 +17,13 @@
     {%- endif -%}
 
     {% unless featured %}
-      <h1 class="product-meta__title heading h3">{{ product.title }}{% if product.metafields.custom.lens_type contains 'Polarized' %} (Polarized){% endif %}</h1>
+      <h1 class="product-meta__title heading h3">
+        {{ product.title -}}
+        {%- if product.metafields.custom.lens_type contains 'Polarized' %} (Polarized){% endif %}
+      </h1>
     {% else %}
       <h2 class="product-meta__title heading h3">
-      <a href="{{ product.url }}">{{ product.title }}</a>
+        <a href="{{ product.url }}">{{ product.title }}</a>
       </h2>
     {% endunless %}
 
@@ -180,7 +183,7 @@
                 {% else %}
                   <div><span style="color: #5a5a5a;">Lens Color</span>: {{ product_lens_color }}</div>
                 {% endif %}
-                {% if product.type == "Clip-on ( Attachments )" %}
+                {% if product.type == 'Clip-on ( Attachments )' %}
                   <div><span style="color: #5a5a5a;">Clip-on Lens Color</span>: Black</div>
                 {% endif %}
               </div>
@@ -216,7 +219,7 @@
               boxed: boxed
             -%}
           </div>
-        {% endcase %}
+      {% endcase %}
     {% endfor %}
   </product-meta>
 

@@ -561,6 +561,29 @@
             {{ package.included_contents | metafield_tag }}
           </div>
         </div>
+      {% when 'information' %}
+        <div class="product-form__information">
+          <div class="group">
+            <div class="group-item">
+              <div class="group-item__icon">
+                <img src="{{ 'fast.png' | asset_img_url }}" alt="Free Shipping" width="40" height="40">
+              </div>
+              <div class="group-item__text">Free Shipping</div>
+            </div>
+            <div class="group-item">
+              <div class="group-item__icon">
+                <img src="{{ 'cash-on-delivery.png' | asset_img_url }}" alt="Cash On Delivery Available" width="40" height="40">
+              </div>
+              <div class="group-item__text">COD Available</div>
+            </div>
+            <div class="group-item">
+              <div class="group-item__icon">
+                <img src="{{ 'easy-returns.png' | asset_img_url }}" alt="Easy Returns & Exchanges" width="40" height="40">
+              </div>
+              <div class="group-item__text">Easy Returns</div>
+            </div>
+          </div>
+        </div>
     {%- endcase -%}
   {%- endfor -%}
 

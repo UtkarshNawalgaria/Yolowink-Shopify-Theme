@@ -77,10 +77,15 @@
             "condition_field": "lens_type",
             "condition_value": "Polarized"
           }
+        },
+        "information": {
+          "type": "information",
+          "settings": {}
         }
       },
       "block_order": [
         "variant_picker",
+        "information",
         "quantity_selector",
         "buy_buttons",
         "related_products",

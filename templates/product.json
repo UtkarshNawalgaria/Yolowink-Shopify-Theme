@@ -101,10 +101,15 @@
             "condition_field": "",
             "condition_value": ""
           }
+        },
+        "information": {
+          "type": "information",
+          "settings": {}
         }
       },
       "block_order": [
         "variant_picker",
+        "information",
         "quantity_selector",
         "buy_buttons",
         "image_MBbER6",
