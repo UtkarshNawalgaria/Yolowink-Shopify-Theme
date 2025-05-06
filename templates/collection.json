@@ -11,33 +11,13 @@
   "sections": {
     "slideshow_48KL4x": {
       "type": "slideshow",
-      "blocks": {
-        "image_Y6kiMf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/YW_Banner_1.2.jpg",
-            "mobile_image": "shopify://shop_images/YW_Banner_1_Mobile_Version.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_Y6kiMf"
-      ],
-      "disabled": false,
       "settings": {
         "section_height": "auto",
+        "transition_type": "sweep",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
       }
     },
     "collection-banner": {
