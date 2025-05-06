@@ -13,59 +13,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "message_mwKdCW": {
-          "type": "message",
-          "settings": {
-            "text": "Buy 1 Get 10% | Buy 2 Get 20%",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "message_izpKKE": {
-          "type": "message",
-          "settings": {
-            "text": "",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "ewfre",
-            "button_link": "shopify://collections/get-2-at-rs-2000"
-          }
-        },
-        "message_VDKN9F": {
-          "type": "message",
-          "settings": {
-            "text": "COD Available on Orders upto Rs 2000",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        },
-        "message_H8QGiC": {
-          "type": "message",
-          "settings": {
-            "text": "Free Shipping all over India",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "message_mwKdCW",
-        "message_izpKKE",
-        "message_VDKN9F",
-        "message_H8QGiC"
-      ],
-      "disabled": true,
       "settings": {
         "announcement_bar_position": "non_sticky",
         "layout": "scrolling",
