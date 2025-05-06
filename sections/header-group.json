@@ -28,7 +28,7 @@
         "message_izpKKE": {
           "type": "message",
           "settings": {
-            "text": "New Year Sale | Buy any 2 in Rs 2000",
+            "text": "",
             "learn_more_text": "Learn more",
             "title": "",
             "content": "",
@@ -65,6 +65,7 @@
         "message_VDKN9F",
         "message_H8QGiC"
       ],
+      "disabled": true,
       "settings": {
         "announcement_bar_position": "non_sticky",
         "layout": "scrolling",

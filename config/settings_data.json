@@ -52,11 +52,11 @@
     "social_instagram": "https://www.instagram.com/yolowink/",
     "social_youtube": "https://www.youtube.com/@yolowink",
     "favicon": "shopify://shop_images/YOLOWINK_FAVICON.png",
-    "accent_color": "#405de6",
     "checkout_sidebar_background_color": "#f5f5f5",
     "checkout_accent_color": "#282828",
     "checkout_button_color": "#405de6",
     "checkout_error_color": "#de2a2a",
+    "accent_color": "#405de6",
     "sections": {
       "mini-cart": {
         "type": "mini-cart",

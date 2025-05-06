@@ -12,44 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_mqUccr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/YW_Banner_1920x800_bfc4353f-c598-4a0e-ae7a-c2c285c67d16.png",
-            "mobile_image": "shopify://shop_images/Sale_Banner_375_x_500_px.png",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify://collections/get-2-at-rs-2000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2.png",
-            "mobile_image": "shopify://shop_images/2_baea7d0f-484c-4cf6-bace-fcf80b997d62.png",
-            "text_position": "bottom_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify://collections/sunglasses",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#e5e5e5",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "image_6iMRJp": {
           "type": "image",
           "settings": {
@@ -90,8 +52,6 @@
         }
       },
       "block_order": [
-        "image_mqUccr",
-        "slide-1",
         "image_6iMRJp",
         "image_DkM7Xe"
       ],
@@ -436,8 +396,14 @@
           "settings": {
             "title": "Visit Us @yolowink",
             "title_color": "",
-            "title_size": 32,
+            "title_size_v2": 0,
             "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
             "background_color": "",
             "feed_id": "",
             "html_area": ""
